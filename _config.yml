@@ -24,3 +24,12 @@ version:          2.1.0
 
 github:
   repo:           https://github.com/poole/hyde
+
+# Algolia
+gems:
+  - algoliasearch-jekyll
+
+algolia:
+  application_id: 'latency'
+  index_name: 'jekyll'
+  read_only_api_key: '6be0576ff61c053d5f9a3225e2a90f76'

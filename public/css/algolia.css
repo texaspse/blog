@@ -1,0 +1,38 @@
+/* Search form */
+.algolia__form {
+  margin-bottom: 1rem;
+}
+
+.algolia__input {
+  font-size: 20px;
+  padding:.25rem .5rem;
+}
+
+/* Search results */
+.algolia__initial-content {
+  display:block;
+}
+.algolia__initial-content--hidden {
+  display:none;
+}
+.algolia__search-content {
+  display:none;
+}
+.algolia__search-content--active {
+  display:block;
+}
+
+.algolia__result-link {
+  font-size: 1.25rem;
+  font-weight:bold;
+}
+.algolia__result-date {
+  font-size:0.8rem;
+
+}
+.algolia__result-text {
+}
+.algolia__result-highlight {
+  background: yellow;
+  color:inherit;
+}

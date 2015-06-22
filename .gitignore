@@ -39,3 +39,6 @@ validation-report.json
 
 # Folders to ignore
 node_modules
+
+# Algolia API key
+_algolia_api_key
