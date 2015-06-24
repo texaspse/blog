@@ -66,8 +66,14 @@ $(function(config) {
 
     var selector = decodeURI(anchor.replace(/^algolia:/, ''));
     var target = $('.page,.post').find(selector);
+    var targetOffset = target[0].getBoundingClientRect().top + window.pageYOffset;
+    var targetHeight = target.height();
+    var windowHeight = $(window).height();
+    var scrollOffset = targetOffset - (windowHeight / 2) - (targetHeight / 2);
+
     window.setTimeout(function() {
-      $(document).scrollTop(target.offset().top - 10);
+      window.scroll(0, scrollOffset);
     }, 100);
+
   })();
 }(window.ALGOLIA_CONFIG));
