@@ -2,7 +2,8 @@
   window.ALGOLIA_CONFIG = {
     'applicationId': '{{ site.algolia.application_id }}',
     'indexName': '{{ site.algolia.index_name }}',
-    'apiKey': '{{ site.algolia.read_only_api_key }}'
+    'apiKey': '{{ site.algolia.read_only_api_key }}',
+    'baseurl': '{{ site.baseurl }}'
   }
 </script>
 <script id="algolia__template" type="text/template">
@@ -13,6 +14,7 @@
     <div class="algolia__result-date">{{ posted_at_readable }}</div>
     {{/posted_at}}
     <div class="algolia__result-text">{{{ _highlightResult.text.value }}}</div>
+  </div>
 {% endraw %}
 </script>
 <script id="algolia__template--no-results" type="text/template">

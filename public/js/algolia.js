@@ -51,11 +51,11 @@ $(function(config) {
         hit.posted_at_readable = moment.unix(hit.posted_at).fromNow();
       }
       hit.css_selector = encodeURI(hit.css_selector);
+      hit.url = config.baseurl + hit.url;
 
       return templateResult.render(hit);
     }).join('');
   }
-
 
   // Scroll page to result
   (function() {

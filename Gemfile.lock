@@ -1,10 +1,10 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    algoliasearch (1.5.0)
+    algoliasearch (1.6.0)
       httpclient (~> 2.4)
       json (>= 1.5.1)
-    algoliasearch-jekyll (0.2.2)
+    algoliasearch-jekyll (0.2.3)
       algoliasearch (~> 1.4)
       awesome_print (~> 1.6)
       json (~> 1.8)
@@ -81,5 +81,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  algoliasearch-jekyll (>= 0.2.2)
-  jekyll (>= 2.5.3)
+  algoliasearch-jekyll (~> 0.2.3)
+  jekyll (~> 2.5)
+
+BUNDLED WITH
+   1.10.5
