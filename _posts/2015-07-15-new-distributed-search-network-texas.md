@@ -13,13 +13,13 @@ You probably already know it: any millisecond that end-users have to wait to
 get their results drives us nuts. But what on Earth does this have to do with
 Texas? Actually a lot!
 
-## You want your search to be instant? Let’s talk network...
+## You want your search to be instant? Let's talk network...
 
 When looking at the speed of search on a website or a mobile application, the
-performance of the search engine is just one part of the equation. When you’re
+performance of the search engine is just one part of the equation. When you're
 using an extremely fast engine, network latency and saturated links quickly
 become your biggest enemies: it simply takes time for the user query to reach
-the engine and for the results to get back to the user’s browser.
+the engine and for the results to get back to the user's browser.
 
 In some cases, the round trip can easily take more than a second. In the US, it
 can take up to 300ms to simply establish an SSL connection between the two
@@ -29,7 +29,7 @@ time experience you hoped to offer with your search engine.
 
 ## A new US Central point of presence to reach a 25ms total delivery time across the US
 
-A great search experience is to drive end-users towards what they’re looking
+A great search experience is to drive end-users towards what they're looking
 as quickly and seamlessly as possible. For us at Algolia it means to be able
 to dynamically update the content displayed as the end-user is typing a query.
 Being able to offer this find as-you-type experience obviously requires a very
@@ -37,22 +37,22 @@ performant search engine but it also requires to host the search engine itself
 as close as possible to the end-user in order to tackle the network latency.
 
 This is why we are adding this new US Central region to our existing twelve
-regions. With the addition of the Dallas PoP, Algolia’s API is now accessible
+regions. With the addition of the Dallas PoP, Algolia's API is now accessible
 from thirteen different regions including US (East, West and Central),
 Australia, Brazil, Canada, France, Germany, Hong Kong, India, Japan, Russia,
 and Singapore.
 
 If your audience is spread out across multiple regions, you can use Algolia
 from a combination of these regions to ensure minimal results delivery time
-and optimal speed for all your users (Algolia’s Distributed Search Network
+and optimal speed for all your users (Algolia's Distributed Search Network
 automatically routes user queries to your closest region).
 
-This new US Central PoP, combined with Algolia’s US East and US West PoPs, now
+This new US Central PoP, combined with Algolia's US East and US West PoPs, now
 allows to deliver search results across the US with less than 25 milliseconds of
 latency. This guarantees a seamless find-as-you-type experience on websites and
 mobile applications all across the US.
 
-[![dallas2](assets/dallas2.jpg)](https://blog.algolia.com/wp-content/uploads/2015/07/dallas2.jpg)
+[![dallas2][1]](https://blog.algolia.com/wp-content/uploads/2015/07/dallas2.jpg)
 
 ## Getting closer to additional infrastructure providers
 
@@ -68,15 +68,19 @@ local infrastructure providers such as Rackspace and Softlayer to also benefit
 from the full power of Algolia. This new PoP offers them an extremely low
 network latency between their backend and our API.
 
-If you’re not already an Algolia user and you want to give it a try, simply
-[sign up](https://www.algolia.com/users/sign_up) for a 14 day trial and select
+If you're not already an Algolia user and you want to give it a try, simply
+[sign up][2] for a 14 day trial and select
 the US Central region in the process.
 
 If you are already using Algolia and want to migrate to the US Central region,
-simply drop us a line at [support@algolia.com](mailto:support@algolia.com) or
+simply drop us a line at [support@algolia.com][3] or
 on the live chat.
 
-If you’re none of the two above, we still think you’re awesome!
+If you're none of the two above, we still think you're awesome!
 
 Cheers!
 
+
+[1]: /algoliasearch-jekyll-hyde/assets/dallas2.jpg
+[2]: https://www.algolia.com/users/sign_up
+[3]: mailto:support@algolia.com
