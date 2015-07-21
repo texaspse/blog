@@ -19,21 +19,34 @@ $(function(config) {
   var $initialContent = $('.js-algolia__initial-content');
   var $searchContent = $('.js-algolia__search-content');
   var $searchContentResults = $searchContent.find('.algolia__results');
+  $searchContentResults.on('click', 'a', onLinkClick);
   // Rendering templates
   var templateResult = Hogan.compile($('#algolia__template').html());
   var templateNoResults = $('#algolia__template--no-results').html();
 
   var lastQuery;
+
+  // Toggle result page
+  function showResults() {
+    window.scroll(0, 0);
+    $initialContent.addClass('algolia__initial-content--hidden');
+    $searchContent.addClass('algolia__search-content--active');
+
+  }
+  function hideResults() {
+    $initialContent.removeClass('algolia__initial-content--hidden');
+    $searchContent.removeClass('algolia__search-content--active');
+  }
+
+  // Handle typing query
   function onQueryChange() {
     lastQuery = $searchInput.val();
     if (lastQuery.length === 0) {
-      $initialContent.removeClass('algolia__initial-content--hidden');
-      $searchContent.removeClass('algolia__search-content--active');
+      hideResults();
       return false;
     }
-    $initialContent.addClass('algolia__initial-content--hidden');
-    $searchContent.addClass('algolia__search-content--active');
     helper.setQuery(lastQuery).search();
+    showResults();
   }
 
   function onResult(data) {
@@ -51,29 +64,48 @@ $(function(config) {
         hit.posted_at_readable = moment.unix(hit.posted_at).fromNow();
       }
       hit.css_selector = encodeURI(hit.css_selector);
-      hit.url = config.baseurl + hit.url;
+      hit.full_url = config.baseurl + hit.url;
 
       return templateResult.render(hit);
     }).join('');
   }
 
-  // Scroll page to result
-  (function() {
-    var anchor = window.location.hash.substring(1);
+  // Scroll page to correct element
+  function getAnchorSelector(hash) {
+    var anchor = hash.substring(1);
     if (!anchor.match(/^algolia:/)) {
-      return;
+      return false;
     }
+    return decodeURI(anchor.replace(/^algolia:/, ''));
+  }
 
-    var selector = decodeURI(anchor.replace(/^algolia:/, ''));
+  function scrollPageToSelector(selector) {
     var target = $('.page,.post').find(selector);
     var targetOffset = target[0].getBoundingClientRect().top + window.pageYOffset;
-    var targetHeight = target.height();
-    var windowHeight = $(window).height();
-    var scrollOffset = targetOffset - (windowHeight / 2) - (targetHeight / 2);
-
     window.setTimeout(function() {
-      window.scroll(0, scrollOffset);
+      window.scroll(0, targetOffset);
     }, 100);
+  }
 
-  })();
+  function onLinkClick(event) {
+    var selector = getAnchorSelector(event.target.hash);
+    // Normal link, going to another page
+    if (event.target.pathname !== window.location.pathname || !selector) {
+      return true;
+    }
+    // Scrolling to a result on the same page
+    hideResults();
+    scrollPageToSelector(selector);
+    event.preventDefault();
+    return false;
+  }
+
+  window.setTimeout(function() {
+    var selector = getAnchorSelector(window.location.hash);
+    if (selector) {
+      scrollPageToSelector(selector);
+    }
+  }, 100);
+
+
 }(window.ALGOLIA_CONFIG));
