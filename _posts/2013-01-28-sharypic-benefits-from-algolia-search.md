@@ -10,12 +10,11 @@ author:
 ---
 
 Demonstrating how Algolia Search functions in the wild, in this post we will
-discuss a recent integration with [sharypic](http://sharypic.com), another
+discuss a recent integration with [sharypic][1], another
 Paris-based startup focussed on photo sharing at events.
 
-Sharypic is a [web](http://www.sharypic.com/) and [mobile
-app](https://itunes.apple.com/us/app/sharypic-event-photo-
-sharing/id490922939?mt=8) dedicated to collaborative photo sharing, focused on
+Sharypic is a [web][2] and [mobile
+app][3] dedicated to collaborative photo sharing, focused on
 enabling users to easily gather photos from attendees during and after an
 event. The platform allows users to collect and share photos from all devices,
 including mobiles (via Twitter and Instagram), cameras, and computers, and
@@ -27,7 +26,7 @@ primary ways that users discover events is via a search bar, in addition to
 pages highlighting recent and popular events.
 
   
-[![Sharypic](assets/Sharypic.png)](http://blog.algolia.com/sharypic-benefits-
+[![Sharypic][4]](http://blog.algolia.com/sharypic-benefits-
 from-algolia-search/sharypic/)The existing mobile search function relied on
 users accurately typing an event's name into the search field, which limited
 the results (especially on smartphones where typos are common). By integrating
@@ -49,8 +48,13 @@ possibly leading to increased exploration on the platform. Time will tell how
 the new search feature affects user behaviour, but reducing user frustration
 through quick and efficient search is a step in the right direction.
 
-_[Download](https://itunes.apple.com/us/app/sharypic-event-photo-
-sharing/id490922939?mt=8) the latest version of the sharypic app, including
+_[Download][5] the latest version of the sharypic app, including
 integrated Algolia Search, and have fun with photo sharing at your next
 event!_
 
+
+[1]: http://sharypic.com
+[2]: http://www.sharypic.com/
+[3]: https://itunes.apple.com/us/app/sharypic-event-photo-sharing/id490922939?mt=8
+[4]: /algoliasearch-jekyll-hyde/assets/Sharypic.png
+[5]: https://itunes.apple.com/us/app/sharypic-event-photo-sharing/id490922939?mt=8

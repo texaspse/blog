@@ -9,8 +9,7 @@ author:
   last_name: Lemoine
 ---
 
-[![Algolia Search Beta 3](assets/CitiesSuggestIOSPortraitSmall-
-155x300.png)](https://blog.algolia.com/wp-
+[![Algolia Search Beta 3][1]](https://blog.algolia.com/wp-
 content/uploads/2012/09/CitiesSuggestIOSPortraitSmall.png)We are pleased to
 announce Algolia Search Beta 3, our third release with a strong focus on
 performance.
@@ -50,3 +49,5 @@ understand for end-users.
 
   * Added a version without ARC that allows to target iOS >= 3.0
 
+
+[1]: /algoliasearch-jekyll-hyde/assets/CitiesSuggestIOSPortraitSmall-155x300.png

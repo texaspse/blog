@@ -19,8 +19,10 @@ server-side. All that has just changed! You can now use our search engine
 online, enabling you to change your data at any frequency and return
 consistantly up-to-date search results in your apps. Interested? Request your
 invitation to the Beta from the [features
-page](http://www.algolia.com/features/).
+page][1].
 
 And don't forget you can combine it with our offline SDK, for great search
 performance whatever the connectivity!
 
+
+[1]: http://www.algolia.com/features/

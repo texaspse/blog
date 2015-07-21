@@ -9,13 +9,13 @@ author:
   last_name: Lemoine
 ---
 
-[![App Store](assets/appstore.jpg)](http://www.algolia.com/demo/appstore/)If
+[![App Store][1]](http://www.algolia.com/demo/appstore/)If
 you have an iOS device you probably search the App Store regularly for apps
 you have heard about. Following the recent AppGratis ousting from the
 AppStore, there were claims that the App Store search function is broken. That
 was our trigger to try something ourselves that could serve both as a good
 demo and help us to explore new use-cases! [Check it
-out!](http://www.algolia.com/demo/appstore/)
+out!][2]
 
 ## Obtaining the data
 
@@ -28,7 +28,7 @@ distributed crawler and definitely didn't have the time to do a sequential and
 polite crawling. It is in these moments that you are glad to have an external
 team to do the job for you.
 
-We chose to perform the crawling with [grepsr](http://www.grepsr.com), a
+We chose to perform the crawling with [grepsr][3], a
 service we found via a simple Google search. After a few exchanges we were
 confident that they were up to the job, and they ended up exceeding our
 expectations. Not only did they crawl the pages, but they also scraped the
@@ -56,15 +56,20 @@ average ranking: `rating * log2(nbComments) * 10000`.
 
 ## Searching
 
-Similar to our [CrunchBase demo](http://blog.algolia.com/instant-search-on-
-crunchbase/), we trigger a query directly after page load and again after each
+Similar to our [CrunchBase demo][4], we trigger a query directly after page load and again after each
 keystroke. Additional queries are automatically triggered when scrolling to
 the bottom of the page.
 
-[Guillaume Esquevin](http://platypus-creation.com) did the front-end for us
+[Guillaume Esquevin][5] did the front-end for us
 and a first version of the demo was up and ready in no time. Take a look at
 how simple and fast it is to search for an app!
 
 In the end we did receive access to the Apple API, which we may use later on
 to keep the data in sync.
 
+
+[1]: /algoliasearch-jekyll-hyde/assets/appstore.jpg
+[2]: http://www.algolia.com/demo/appstore/
+[3]: http://www.grepsr.com
+[4]: http://blog.algolia.com/instant-search-on-crunchbase/
+[5]: http://platypus-creation.com

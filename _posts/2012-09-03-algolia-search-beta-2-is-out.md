@@ -35,3 +35,4 @@ And here what's new in this beta2.
   * Removed internal objects from public headers
   * Changed ASAsyncIndexSearcher API to implement the delegate pattern
 
+

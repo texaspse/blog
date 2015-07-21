@@ -11,7 +11,7 @@ author:
 
 At one time or another, most developers come across bugs or problems with
 Unicode (about 3,720,000 results on google for the request [unicode bug
-developer](http://www.google.com/search?q=unicode+bug+developer) at the time
+developer][1] at the time
 of this writing). Let me tell you about my experience in the last decade and
 why we have now implemented our own unicode Library to produce exactly the
 same result across devices/languages.
@@ -31,10 +31,10 @@ results!
 I started to look in details at the standard and downloaded UnicodeData.txt
 (the file that contains most of the information about the standard, you can
 grab the latest version
-[here](ftp://ftp.unicode.org/Public/UNIDATA/UnicodeData.txt)).
+[here][2].
 
 This file contains descriptions of all Unicode characters. Third column
-represents “General Category” and is documented as:
+represents "General Category" and is documented as:
 
 ## **General Categories**
 
@@ -83,7 +83,7 @@ to understand like "Lu" (Letter, uppercase) and "Ll" (Letter, lowercase) but
 some of them are more complex like "Lo" (Letter, other)  and "No" (Number,
 other), and this is exactly where the first problem begins.
 
-Let’s take the unicode character U+00BD(½) as an example. It is quite common
+Let's take the unicode character U+00BD(½) as an example. It is quite common
 to describe spare parts and is defined as "No"... except that some unicode
 libraries consider that this is not a number and return false to
 isNumber(unicodeChar) method (e.g., Objective-C).
@@ -102,8 +102,8 @@ decomposition mapping), for example U+00E0(à) which is decomposed as U+0061(a)
 + U+0300( ̀). But most of the time you do not want a decomposition but a
 normalization: get the most basic form of a string (lowercase without accents,
 marks, …). This is key to be able to search and compare words. For example,
-the normalization of the French word “Hétérogénéité” will be normalized as
-“heterogeneite”.
+the normalization of the French word "Hétérogénéité" will be normalized as
+"heterogeneite".
 
 To compute this normalized form, most people compute the lowercase form of a
 word (well defined by the Unicode standard), then compute the decomposed form
@@ -116,12 +116,11 @@ that there is no decomposition for "ß" in the Unicode standard because this
 letter is not a letter with marks.
 
 To solve that problem, we need to look in the [Character Fallback Substitution
-table](http://unicode.org/repos/cldr-
-tmp/trunk/diff/supplemental/character_fallback_substitutions.html) that is not
+table][3] that is not
 part of most of Unicode library implementations. This substitution table
-defines that “ß” can be replaced by “ss,". There are plenty of other examples;
+defines that "ß" can be replaced by "ss,". There are plenty of other examples;
 For instance, 0153(œ) and 00E6(æ), letters of the French language, can be
-replaced by “oe” and “ae”.
+replaced by "oe" and "ae".
 
 At the end, this led us to implement our own Unicode library to ensure that
 our isAlpha(unicodechar) and isNumber(unicodechar) methods have a unique
@@ -135,3 +134,7 @@ I hope you found this post useful and gained a better understanding of the
 Unicode standard and the limits of standard Unicode libraries. Feel free to
 contribute comments or ask for precisions.
 
+
+[1]: http://www.google.com/search?q=unicode+bug+developer
+[2]: ftp://ftp.unicode.org/Public/UNIDATA/UnicodeData.txt)
+[3]: http://unicode.org/repos/cldr-tmp/trunk/diff/supplemental/character_fallback_substitutions.html

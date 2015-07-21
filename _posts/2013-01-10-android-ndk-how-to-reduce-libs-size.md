@@ -11,13 +11,11 @@ author:
 
 When we started Algolia Development for Android, binary size optimization was
 not one of our main concerns. In fact we even started to develop in JAVA
-before switching to C/C++ for [reasons of performance](http://blog.algolia.com
-/need-performance-on-mobile-use-c-cpp/).
+before switching to C/C++ for [reasons of performance][1].
 
 We were reminded of the importance of binary size by [Cyril
-Mottier](http://android.cyrilmottier.com) who informed us that it would be
-difficult to integrate our lib in [AVelov](https://play.google.com/store/apps/
-details?id=com.cyrilmottier.android.avelov) Android Application because its
+Mottier][2] who informed us that it would be
+difficult to integrate our lib in [AVelov][3] Android Application because its
 size. AVelov is 638KB and Algolia was 850KB, which would mean that AVelov
 would more than double in size with Algolia Search embedded.
 
@@ -84,7 +82,7 @@ Make sure you also link against the logging library, in your Android.mk file:
 ### Use -fvisibility=hidden
 
 An efficient way to reduce binary size is to use the [visibility
-feature](http://gcc.gnu.org/wiki/Visibility) of gcc. This feature lets you
+feature][4] of gcc. This feature lets you
 control which functions will be exported in the symbols table. Hopefully, JNI
 comes with a _JNIEXPORT_ macro that flags JNI functions as public. You just
 have to check that all functions used by JNI are prefixed by JNIEXPORT, like
@@ -232,3 +230,8 @@ Android since default flags are far from optimal. Don't expect to obtain the
 same size reductions, they will highly depend on your specific usage. And if
 you know other methods to reduce binary size, please share in the comments!
 
+
+[1]: http://blog.algolia.com/need-performance-on-mobile-use-c-cpp/
+[2]: http://android.cyrilmottier.com
+[3]: https://play.google.com/store/apps/details?id=com.cyrilmottier.android.avelov
+[4]: http://gcc.gnu.org/wiki/Visibility

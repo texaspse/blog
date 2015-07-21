@@ -10,10 +10,10 @@ author:
 ---
 
 [![Rubymotion search gem by Algolia is now
-live!](assets/rubymotion1-270x300.png)](https://blog.algolia.com/wp-
+live!][1]](https://blog.algolia.com/wp-
 content/uploads/2013/04/rubymotion1.png)If you are a Ruby developer and have
 an iPhone, chances are you already now about the cool project that is
-[RubyMotion](http://www.rubymotion.com/)! I quote:
+[RubyMotion][2]! I quote:
 
 > "It lets you quickly develop and test native iOS applications for iPhone or
 iPad, all using the awesome Ruby language you know and love."
@@ -31,8 +31,13 @@ know the trick:
     
 
 The gem code is open source. You can fork it from
-[github](https://github.com/algolia/motion-algolia-search).
+[github][3].
 
 Special thanks to the RubyMotion team and especially to
-[Joffrey](https://twitter.com/joffreyjaffeux) for this integration!
+[Joffrey][4] for this integration!
 
+
+[1]: /algoliasearch-jekyll-hyde/assets/rubymotion1-270x300.png
+[2]: http://www.rubymotion.com/
+[3]: https://github.com/algolia/motion-algolia-search
+[4]: https://twitter.com/joffreyjaffeux

@@ -9,8 +9,7 @@ author:
   last_name: Lemoine
 ---
 
-[![New datacenter allows realtime search in Asia](assets/Screen-
-Shot-2014-03-13-at-17.51.50-300x199.png)](http://blog.algolia.com/added-asian-
+[![New datacenter allows realtime search in Asia][1]](http://blog.algolia.com/added-asian-
 datacenter-offer/screen-shot-2014-03-13-at-17-51-50/)
 
 One of the terrific advantages of building a SaaS company is that your clients
@@ -30,7 +29,7 @@ or Korean, and we handle the language processing for you.
 Despite the fact that we could process Asian languages well, we didn't plan to
 open an Asian datacenter so early, mainly because we thought the API as a
 service market was less mature in Asia than in the US or Europe. But we were
-surprised when an article on [36kr.com](http://www.36kr.com/p/209747.html)
+surprised when an article on [36kr.com][2]
 gave us dozen of signups from China. We got more signups from China in the
 past month than from Canada!
 
@@ -64,3 +63,6 @@ America & Asia in less than 100ms with our multi-datacenter support!*
 _Multi-datacenter support is currently only available for Enterprise
 accounts._
 
+
+[1]: /algoliasearch-jekyll-hyde/assets/Screen-Shot-2014-03-13-at-17.51.50-300x199.png
+[2]: http://www.36kr.com/p/209747.html

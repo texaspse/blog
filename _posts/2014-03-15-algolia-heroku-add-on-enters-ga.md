@@ -18,6 +18,9 @@ production on both Heroku datacenters. If you were part of our beta program,
 we will contact you shortly to invite you to migrate to a standard plan.
 
 You can directly install it from our [Heroku add-on
-page](https://addons.heroku.com/algoliasearch) and as ever, please [let us
-know](mailto:hey@algolia.com) if you have any feedback!
+page][1] and as ever, please [let us
+know][2] if you have any feedback!
 
+
+[1]: https://addons.heroku.com/algoliasearch
+[2]: mailto:hey@algolia.com

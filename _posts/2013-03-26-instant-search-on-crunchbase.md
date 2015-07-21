@@ -12,7 +12,7 @@ author:
 After launching the Beta Cloud version of Algolia, we wanted to demonstrate
 what it can do. We built a search engine using CrunchBase data, so
 entrepreneurs can easily search for their company or themselves. [Check it
-out!](http://www.algolia.com/demo/crunchbase/)
+out!][1]
 
 You can search for companies, people and financial organizations, using
 multiple attributes. Results are updated after each keystroke and matching
@@ -44,7 +44,7 @@ search function indicating the callback that will handle resulting hits
 asynchronously. More details to follow once we've written the doc!
 
 We automatically choose the server closest to your location by using [Amazon
-Route 53](http://aws.amazon.com/route53/). Once the DNS lookup is resolved, it
+Route 53][2]. Once the DNS lookup is resolved, it
 lets us get low enough latencies that the response feels nearly instantaneous
 (if you test it from North America or Europe). From DSL connections, we obtain
 search latencies of about 90ms in San Francisco, 75ms in New York and 65ms in
@@ -104,3 +104,6 @@ decreasing order of CrunchBase entry size and then by alphabetical order.
 This is just a demo but we'd like to continue improving it! Please tell us
 what you think and send your suggestions: contact at algolia dot com
 
+
+[1]: http://www.algolia.com/demo/crunchbase/
+[2]: http://aws.amazon.com/route53/

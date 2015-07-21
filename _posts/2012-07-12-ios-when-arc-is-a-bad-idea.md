@@ -131,7 +131,7 @@ variables are strong by default. The problem is that ARC does not generate
 code in the variable assignation. You should explicitely add properties and
 use "self.variableName" notation like in the next example. I would encourage
 ARC designers to read this excellent article by Joel Spolsky ["Making Wrong
-Code Look Wrong"](http://www.joelonsoftware.com/articles/Wrong.html). This ARC
+Code Look Wrong"][1]. This ARC
 usage is a perfect example of wrong code that looks perfect but leads me to
 the conclusion that ARC is not trustworthy.
 
@@ -190,3 +190,5 @@ products:
 
 I hope you'll tell us when we will (inevitably) break these rules!
 
+
+[1]: http://www.joelonsoftware.com/articles/Wrong.html

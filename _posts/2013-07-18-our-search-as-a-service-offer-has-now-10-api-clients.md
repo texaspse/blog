@@ -14,22 +14,22 @@ Service offer. We're now proud to offer 10 API clients, covering all major
 languages.
 
 Ease of use was a major focus during development. We began by offering a
-complete and easy-to-integrate [REST API](http://docs.algoliav1.apiary.io/).
+complete and easy-to-integrate [REST API][1].
 Providing API clients was a logical way to improve ease of use. You can now
 quick start and test the engine with your data in a couple of minutes, with no
 prior configuration whatsoever. Each API Client is released under the MIT
 License and comes with a quick start and complete documentation:
 
-  * [Javascript client](https://github.com/algolia/algoliasearch-client-js)
-  * [Ruby client](https://github.com/algolia/algoliasearch-client-ruby)
-  * [Python client](https://github.com/algolia/algoliasearch-client-python)
-  * [PHP client](https://github.com/algolia/algoliasearch-client-php)
-  * [iOS and OS X client](https://github.com/algolia/algoliasearch-client-objc)
-  * [Android client](https://github.com/algolia/algoliasearch-client-android)
-  * [Java client](https://github.com/algolia/algoliasearch-client-java)
-  * [C# client for Windows, Windows Phone and Silverlight](https://github.com/algolia/algoliasearch-client-csharp)
-  * [Node.js client](https://github.com/algolia/algoliasearch-client-node)
-  * [Command line client for linux/mac](https://github.com/algolia/algoliasearch-client-cmd)
+  * [Javascript client][2]
+  * [Ruby client][3]
+  * [Python client][4]
+  * [PHP client][5]
+  * [iOS and OS X client][6]
+  * [Android client][7]
+  * [Java client][8]
+  * [C# client for Windows, Windows Phone and Silverlight][9]
+  * [Node.js client][10]
+  * [Command line client for linux/mac][11]
 
 This variety of languages and platforms reveals the diversity of our beta
 testers:
@@ -39,5 +39,18 @@ testers:
   * Technical environments: mobile, desktop, and web apps.
 
 Interested in trying it out yourself? Ask for an
-[invite](http://www.algolia.com/pricing/)!
+[invite][12]!
 
+
+[1]: http://docs.algoliav1.apiary.io/
+[2]: https://github.com/algolia/algoliasearch-client-js
+[3]: https://github.com/algolia/algoliasearch-client-ruby
+[4]: https://github.com/algolia/algoliasearch-client-python
+[5]: https://github.com/algolia/algoliasearch-client-php
+[6]: https://github.com/algolia/algoliasearch-client-objc
+[7]: https://github.com/algolia/algoliasearch-client-android
+[8]: https://github.com/algolia/algoliasearch-client-java
+[9]: https://github.com/algolia/algoliasearch-client-csharp
+[10]: https://github.com/algolia/algoliasearch-client-node
+[11]: https://github.com/algolia/algoliasearch-client-cmd
+[12]: http://www.algolia.com/pricing/

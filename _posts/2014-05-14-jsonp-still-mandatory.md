@@ -27,14 +27,16 @@ methods to call an external API from the browser:
 ###  JSONP
 
 The [JSONP](http://en.wikipedia.org/wiki/JSONP) approach is a workaround that
-consists of calling an external API  with a DOM <script>  tag. The <script>
+consists of calling an external API  with a DOM `<script>`  tag. The `<script>`
 tag is allowed to load content from any domains without security restrictions.
 The targeted API needs to expose a HTTP GET endpoint and return Javascript
 code instead of the regular JSON data. You can use this jQuery code to
 dynamically call a JSONP URL:
 
     
-    $.getJSON( "http://api.algolia.io/1/indexes/users?query=test", function( data ) { .... }
+```javascript
+$.getJSON( "http://api.algolia.io/1/indexes/users?query=test", function( data ) { .... }
+```
 
 In order to retrieve the API answer from the newly included JavaScript code,
 jQuery automatically appends a callback argument to your URL (for example
@@ -44,14 +46,18 @@ generates.
 This is what a regular JSON reply would look like:
 
     
-    {
-      "results": [ ...]
-    }
+```json
+{
+  "results": [ ...]
+}
+```
 
 Instead, the JSONP-compliant API generates:
 
     
-    method12({"results": [ ...]});
+```javascript
+method12({"results": [ ...]});
+```
 
 ### Cross Origin Resource Sharing
 
@@ -98,7 +104,7 @@ The server reply will be similar to this one:
     < Access-Control-Max-Age: 86400
 
 This answer indicates that this POST method can be called from any domain
-(Access-Control-Allow-Origin: * ) and with the requested headers.
+(Access-Control-Allow-Origin: \* ) and with the requested headers.
 
 CORS has many advantages. First, it allows access to a real REST API with all
 HTTP verbs (mainly GET, POST, PUT, DELETE) and it also allows to better handle

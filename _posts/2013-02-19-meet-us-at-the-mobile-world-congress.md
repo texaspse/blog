@@ -18,3 +18,4 @@ offer... Algolia for FREE! Stay tuned!
 If you happen to be attending MWC too, ping me if you'd like to discuss over a
 coffee :) (@dessaigne on twitter, or nicolas at algolia dot com).
 
+

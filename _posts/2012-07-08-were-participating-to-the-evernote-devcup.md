@@ -25,7 +25,7 @@ As you see, even if we don't make it to the finals, the decision was a no-
 brainer! But, wait... we'd love to go to the finals! **And you can help us!**
 Part of the competition is to get the maximum public support. You want to hep
 us? Just go to our [submission
-page](http://devcup.evernote.com/submissions/8585-search-for-evernote) and
+page][1] and
 vote once a day! Tell your friends! Tell your grandma! You can even log in via
 facebook ;)
 
@@ -35,3 +35,5 @@ You can also download the app directly from
 
 httpvh://youtu.be/Te7gtKl_vIU
 
+
+[1]: http://devcup.evernote.com/submissions/8585-search-for-evernote

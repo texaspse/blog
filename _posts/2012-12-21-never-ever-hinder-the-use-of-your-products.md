@@ -35,3 +35,4 @@ It may sound evident, but it is very important to ensure your users will
 always be able able to keep control over their products. You should never
 force them to do something they do not want to, like Sony did with the PS3.
 
+

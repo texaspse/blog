@@ -36,7 +36,7 @@ few milliseconds, even with a very big data set (for example with all the
 world cities' names from Geonames: 3M+ entries). This data-structure is
 designed to be used directly on disk without being copied in memory. To obtain
 optimal performance, we use a [memory-mapped
-file](http://en.wikipedia.org/wiki/Memory-mapped_file) which is standard on
+file][1] which is standard on
 all platforms, especially on Linux.
 
 We have been able to use memory-mapped files on all platforms, except on
@@ -77,3 +77,5 @@ things right without alienating existing users!
 By the way, if you know more about APK design choices, I'm interested to hear
 from you!
 
+
+[1]: http://en.wikipedia.org/wiki/Memory-mapped_file

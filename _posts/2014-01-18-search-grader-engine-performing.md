@@ -9,8 +9,7 @@ author:
   last_name: Locqueville
 ---
 
-[![algolia-search-grader](assets/Capture-
-décran-2014-01-24-01.35.26.png)](http://grader.algolia.com)
+[![algolia-search-grader][1]](http://grader.algolia.com)
 
 ## Search is important
 
@@ -40,11 +39,11 @@ In most cases, they fail on the following items:
   * unexplainable or even nonexistent results.
 
 To improve your search experience, you first need to understand which areas
-are problematic. That’s exactly why we built Search Grader by Algolia.
+are problematic. That's exactly why we built Search Grader by Algolia.
 
 ## Introducing Search Grader by Algolia
 
-[Search Grader](http://grader.algolia.com/) by Algolia is a tool to help you
+[Search Grader][2] by Algolia is a tool to help you
 quickly find out what your search engine may be missing. We divided the search
 user experience in 3 categories in order to get a maximum score of 100:
 
@@ -94,15 +93,21 @@ experience in search.
 
 We tested out some of the biggest names in tech:
 
-**[![Algolia search grader](assets/Capture-décran-2014-01-17-18.22.23.png)](http://grader.algolia.com)**
+**[![Algolia search grader][3]](http://grader.algolia.com)**
 
 As you could expect, Amazon and LinkedIn received an excellent score of
 90/100. That's the kind of quality Algolia can help you achieve in your
 application or e-commerce website, for as low as
-[$19/month](http://www.algolia.com/pricing/).
+[$19/month][4].
 
 Now, how about your search? How is it performing? To find out, use [Search
-Grader](http://grader.algolia.com/) by Algolia.
+Grader][5] by Algolia.
 
 If you want to share your ideas with us, please leave your comments!
 
+
+[1]: /algoliasearch-jekyll-hyde/assets/Capture-decran-2014-01-24-01.26.08-600x150.png
+[2]: http://grader.algolia.com/
+[3]: /algoliasearch-jekyll-hyde/assets/Capture-decran-2014-01-17-18.22.23.png
+[4]: http://www.algolia.com/pricing/
+[5]: http://grader.algolia.com/

@@ -18,13 +18,12 @@ aimed for the 20th position (so drinks are on Julien!)
 
 But even with all of your support, we didn't make it to the finals. We would
 have loved to fly to San Francisco, but the [six
-finalists](http://blog.evernote.com/2012/07/27/announcing-the-2012-evernote-
-devcup-finalists/) all feature rich apps that merit their position. Congrats
+finalists][1] all feature rich apps that merit their position. Congrats
 guys, and good luck! The conference is in a couple of days now, and I can't
 wait to find out who will win the cup!
 
 As for us, it was a truly great experience! Remember our
-[post](http://blog.algolia.com/were-participating-to-the-evernote-devcup/)
+[post][2]
 announcing our participation? Well, outside the *slight* frustration of not
 going to SF, the couple of days we spent building the Search for Evernote app
 was really worth it!
@@ -37,3 +36,6 @@ was really worth it!
 That got us thinking... we may do this kind of contest again. But this time
 we'll aim higher!
 
+
+[1]: http://blog.evernote.com/2012/07/27/announcing-the-2012-evernote-devcup-finalists/
+[2]: http://blog.algolia.com/were-participating-to-the-evernote-devcup/

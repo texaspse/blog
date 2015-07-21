@@ -41,35 +41,35 @@ expecting great things from your search-engine, Twitter :) Here is how I would
 improve search for Twitter handles:
 
 For example, it would be nice if I could find President
-[@barackobama][3] with his last name:
+[@barackobama][2] with his last name:
 
 [![Search for Twitter handles including @obama yields less-than-stellar
-results.][4]](https://blog.algolia.com/wp-
+results.][3]](https://blog.algolia.com/wp-
 content/uploads/2013/12/Screen-Shot-2013-12-23-at-11.40.09.png)
 
 Same for Justin:
 
 [![Search for Twitter handles that could be Justin Bieber's yields less-than-
-stellar results.][5]](https://blog.algolia.com/wp-
+stellar results.][4]](https://blog.algolia.com/wp-
 content/uploads/2013/12/Screen-Shot-2013-12-23-at-11.42.01.png)
 
 Typo-tolerance is now a must-have, especially because we're all using
 smartphones and tablets:
 
-[![Search for Twitter handles should have typo tolerance.][6]](https://blog.algolia.com/wp-
+[![Search for Twitter handles should have typo tolerance.][5]](https://blog.algolia.com/wp-
 content/uploads/2013/12/Screen-Shot-2013-12-23-at-11.38.19.png)
 
 More and more handles are now prefixed/suffixed by "official", which makes
-finding [@OfficialAdele][7] just impossible:
+finding [@OfficialAdele][6] just impossible:
 
-[![Search for Twitter handles that start with @official is broken.][8]](https://blog.algolia.com/wp-content/uploads/2013/12/Screen-Shot-2013-12-23-at-11.47.52.png)
+[![Search for Twitter handles that start with @official is broken.][7]](https://blog.algolia.com/wp-content/uploads/2013/12/Screen-Shot-2013-12-23-at-11.47.52.png)
 
 **For sure we can improve it, let's code!**
 
 First of all Twitter, I need your Handles database :)
 
-  * I used your [Streaming API][9] to crawl about 20M+ accounts in ~2 weeks: it's not blazing fast but I must admit it does the job (and it's free). That's about 5 lines of Ruby with [TweetStream][10], good job guys!
-  * and [Daemonize][11] to create a bin/crawler executable.
+  * I used your [Streaming API][8] to crawl about 20M+ accounts in ~2 weeks: it's not blazing fast but I must admit it does the job (and it's free). That's about 5 lines of Ruby with [TweetStream][9], good job guys!
+  * and [Daemonize][10] to create a bin/crawler executable.
     
 ```ruby
 #! /usr/bin/env ruby
@@ -123,7 +123,7 @@ end
 ```
 
 And every minute, I re-index the last-updated accounts with a batch request
-using [algoliasearch-rails][12],
+using [algoliasearch-rails][11],
 
     
 ```ruby
@@ -141,7 +141,7 @@ The result order is based on several criteria:
 
 I could have improved the results by using the user's list of
 followers/following but I was limited by your [Rate
-Limits][13]. **Instead, I chose to
+Limits][12]. **Instead, I chose to
 emphasize your top-users **(accounts having 10M+ followers).
 
 Here is the configuration I used
@@ -204,23 +204,22 @@ The user query is composed by 2 backend queries:
   * the first one retrieves all matching top-users (could be replaced by a query targeting your followers/following only)
   * the second one the others.
 
-[**Try it for yourself**][14], and enjoy
+[**Try it for yourself**][13], and enjoy
 relevant and highlighted results after the first keystroke: [Twitter Handles
-Search][15].
+Search][14].
 
 
 [1]: http://blog.algolia.com/why-autocomplete-in-twitter-on-mobile-sucks/
-[2]: https://twitter.com/twittersearch
-[3]: https://twitter.com/barackobama
-[4]: /assets/Screen-Shot-2013-12-23-at-11.40.09-263x300.png
-[5]: /assets/Screen-Shot-2013-12-23-at-11.42.01-262x300.png
-[6]: /assets/Screen-Shot-2013-12-23-at-11.38.19-263x300.png
-[7]: https://twitter.com/officialadele
-[8]: /assets/Screen-Shot-2013-12-23-at-11.47.52.png
-[9]: https://dev.twitter.com/docs/streaming-apis
-[10]: https://github.com/tweetstream/tweetstream
-[11]: https://github.com/bmc/daemonize
-[12]: https://github.com/algolia/algoliasearch-rails
-[13]: https://dev.twitter.com/docs/rate-limiting/1.1
+[2]: https://twitter.com/barackobama
+[3]: /algoliasearch-jekyll-hyde/assets/Screen-Shot-2013-12-23-at-11.40.09-263x300.png
+[4]: /algoliasearch-jekyll-hyde/assets/Screen-Shot-2013-12-23-at-11.42.01-262x300.png
+[5]: /algoliasearch-jekyll-hyde/assets/Screen-Shot-2013-12-23-at-11.38.19-263x300.png
+[6]: https://twitter.com/officialadele
+[7]: /algoliasearch-jekyll-hyde/assets/Screen-Shot-2013-12-23-at-11.47.52.png
+[8]: https://dev.twitter.com/docs/streaming-apis
+[9]: https://github.com/tweetstream/tweetstream
+[10]: https://github.com/bmc/daemonize
+[11]: https://github.com/algolia/algoliasearch-rails
+[12]: https://dev.twitter.com/docs/rate-limiting/1.1
+[13]: http://twittersearch.algolia.io/
 [14]: http://twittersearch.algolia.io/
-[15]: http://twittersearch.algolia.io/

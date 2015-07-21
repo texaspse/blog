@@ -10,7 +10,7 @@ author:
 ---
 
 We have great news for our iOS and OS X users: our Offline SDK is now
-available as a _[CocoaPods](http://www.cocoapods.org/) _dependency_._
+available as a _[CocoaPods][1] _dependency_._
 
 Cocoapods is a popular dependency management tool that lets you specify the
 libraries (dependencies) you want to use for your project in an easy-to-edit
@@ -31,3 +31,5 @@ Once you're done, simply use the "pod install" command to set up Algolia
 Search Offline in your project. Now it's easy to manage library dependencies
 for iOS and OS X projects!
 
+
+[1]: http://www.cocoapods.org/

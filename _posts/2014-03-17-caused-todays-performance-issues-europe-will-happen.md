@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What Caused Today’s Search Performance Issues In Europe and Why It Will Not Happen Again
+title: What Caused Today's Search Performance Issues In Europe and Why It Will Not Happen Again
 author:
   login: julien
   email: julien.lemoine@algolia.com
@@ -12,14 +12,13 @@ author:
 During a few hours on March 17th you may have noticed longer response times
 for some of the queries sent by your users.
 
-![Slower than average search performance](assets
-/_77ksf1hZVslIrLUu872yP_buHBLHw27JqcGQFvW54IP6DB8WzcWA-
-LLGjf2gW4Rr3fvOX8D08g3KI2oQ4X7uw4_qW4Do4SWNMcoqZyCGk5MKGBHqxwALG5wNvX3ag)
+![Slower than average search
+performance](/algoliasearch-jekyll-hyde/assets/slowerthanaverage.png)
 
 _Average latency for one of our European clusters on March 17th_
 
 As you can see above, our slowest average response time (measured from the
-user’s browser to our servers and back to the user’s browser) on one of our
+user's browser to our servers and back to the user's browser) on one of our
 European clusters peaked at 858ms. On a normal day, this peak is usually no
 higher than 55ms.
 
@@ -28,7 +27,7 @@ This was clearly not a normal behavior for our API, so we investigated.
 ## How indexing and search calls share the resource
 
 Each cluster handles two kinds of calls on our REST API: the ones to build and
-modify the indexes (Writes) and the ones to answer users’ queries (Search).
+modify the indexes (Writes) and the ones to answer users' queries (Search).
 The resources of each cluster are shared between these two uses. As Write
 operations are far more expensive than Search calls, we designed our API so
 that indexing should never use more than 10% of these resources.
@@ -39,7 +38,7 @@ Write calls to keep search quality. To avoid reaching the Write rate limit too
 quickly, we recommended users to Write by batching up to 1GB of operations per
 call, rather than sending them one by one. (A batch, for example, could be
 adding 1M products to an index on a single network call.) A loophole in this
-recommendation was the origin of yesterday’s issues.
+recommendation was the origin of yesterday's issues.
 
 What happened yesterday is that on one of our European clusters, one customer
 pushed so many unbatched indexing calls from different HTTP connections that
@@ -59,4 +58,5 @@ How would you batch your calls? The explanation is in our documentation. See
 here for an example with our Ruby client: [https://github.com/algolia
 /algoliasearch-client-ruby#batch-writes](https://github.com/algolia
 /algoliasearch-client-ruby#batch-writes)
+
 

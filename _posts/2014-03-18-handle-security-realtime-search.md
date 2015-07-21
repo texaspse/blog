@@ -10,7 +10,7 @@ author:
 ---
 
 _**Edit: As suggested on [Hacker
-News](https://news.ycombinator.com/item?id=7419205), SHA256 is not secure, as
+News][1], SHA256 is not secure, as
 it allows a length extension attack. We have replaced it with HMAC-SHA256.**_
 
 Instant is in our DNA, so our first priority was to build a search backend
@@ -21,7 +21,7 @@ time between their first keystroke and the final display of their results.
 Thus, with an extremely fast backend, solving this equation comes down to
 optimising network latency. This is an issue we solve in two steps:
 
-  * First, we have [datacenters in three different locations](http://blog.algolia.com/added-asian-datacenter-offer/), allowing us to answer queries in North America, Europe and Asia in less than 100ms (including search computation).
+  * First, we have [datacenters in three different locations][2], allowing us to answer queries in North America, Europe and Asia in less than 100ms (including search computation).
   * Second, to keep reducing this perceived latency, queries must be sent directly from the end users' browsers or mobile phones to our servers. To avoid intermediaries like your own servers, we offer a JavaScript client for websites and ObjC/Android/C# clients for mobile apps.
 
 ## The security challenge of JavaScript
@@ -64,8 +64,7 @@ You can generate a secured API key in your backend that is defined by a hash
 For example, if you are using rails, the code in your backend would be:
 
     
-    secured_key = Algolia.generate_secured_api_key('20ffce3fdbf036db955d67645bb2c993', 
-                                                   '(public,power_users_only)', '42')
+    secured_key = Algolia.generate_secured_api_key('20ffce3fdbf036db955d67645bb2c993', '(public,power_users_only)', '42')
 
 You can then initialize your JavaScript code with the secured API key and
 associated information:
@@ -82,7 +81,7 @@ and the user identifier (if set).  If there is no match between the hash of
 the query and the ones we computed, we will return a permission denied (403).
 Don't worry, reverse-engineering the original API key using brute-force would
 require years and [thousands of
-core](http://en.wikipedia.org/wiki/SHA-2#Comparison_of_SHA_functions).
+core][3].
 
 You may want to apply security filters without limiting the rate of queries,
 so if you don't need both of these features, you can use only one.
@@ -92,3 +91,7 @@ feedback so far. Our customers don't need to choose anymore between security
 and realtime search. If you see any way to improve this approach, we would
 love to hear your feedback!
 
+
+[1]: https://news.ycombinator.com/item?id=7419205
+[2]: http://blog.algolia.com/added-asian-datacenter-offer/
+[3]: http://en.wikipedia.org/wiki/SHA-2#Comparison_of_SHA_functions

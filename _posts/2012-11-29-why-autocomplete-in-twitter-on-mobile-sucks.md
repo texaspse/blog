@@ -10,7 +10,7 @@ author:
 ---
 
 [![A better Twitter mobile app experience with Algolia
-Search.](assets/ScreenshotTwitter.png)](https://blog.algolia.com/wp-
+Search.][1]](https://blog.algolia.com/wp-
 content/uploads/2012/11/ScreenshotTwitter.png)Autocomplete is so
 intuitive,that it seems like it would be easy to implement. However, most
 mobile apps that offer it provide a pretty poor user experience. Let's look at
@@ -45,5 +45,8 @@ a given user. So ok let me think... the 'c' was reffering to "Cécile" in
 Now let's imagine the Twitter mobile app with instant autocompletion even
 offline, intuitive ranking, and visual feedback... Appealing, isn't it?
 Twitter if you listen, check it up, I'm sure you'll love [Algolia
-Search](http://www.algolia.com/product/)!
+Search][2]!
 
+
+[1]: /algoliasearch-jekyll-hyde/assets/ScreenshotTwitter.png
+[2]: http://www.algolia.com/product/

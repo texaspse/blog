@@ -12,7 +12,7 @@ author:
 When it comes to programming languages and performance, you can read all and
 its opposite on the web. It's definitely a very controversial topic!
 
-**[Edit 15-Nov-2012]** I had questions on [reddit](http://redd.it/136hny) about the data-structures and algorithms we used. We develop an [embedded search engine](http://www.algolia.com) for mobile, and tests were done on our own data-structure that is far more efficient than SQLite or other platform options for this use-case. **[/Edit]**
+**[Edit 15-Nov-2012]** I had questions on [reddit][1] about the data-structures and algorithms we used. We develop an [embedded search engine][2] for mobile, and tests were done on our own data-structure that is far more efficient than SQLite or other platform options for this use-case. **[/Edit]**
 
 For Algolia the story started when researching an instant suggest algorithm. I
 used Java for two reasons:
@@ -41,12 +41,11 @@ As could be expected, the resulting application was quite sluggish on my
 Galaxy S2. The worst queries could take more than one second of CPU.
 
 I then applied all possible methods described in the [Anroid
-documentation](http://developer.android.com/guide/practices/performance.html)
+documentation][3]
 and was able to reduce the response time to 700ms for the longest queries.
 This is better but still gives end-users an impression of sluggishness!
 Fortunately, common queries worked well enough to present our very first demos
-at [LeWeb'12 London](http://blog.algolia.com/great-discussions-at-
-leweb12-london/). I was subsequently able to improve the user experience a lot
+at [LeWeb'12 London][4]. I was subsequently able to improve the user experience a lot
 by adding asynchronous support. At that point, we decided to start
 implementing the objective-C version for iOS.
 
@@ -56,7 +55,7 @@ application for iOS. I first got stuck with some basic UI stuff. For example I
 needed to reimplement an UILabel that supports highlighting! The standard
 UILabel does no support this, and other implementations like Three20 just have
 too many dependencies (you can download AlgoliaUILabel on
-[github](http://github.com/algolia/UILabel), I released  the code under Apache
+[github][5], I released  the code under Apache
 licence). Once the UI was ready, I could see the actual performance was
 catastrophic! Instant suggest queries were between 200ms and 10 seconds on an
 iPhone 4S!
@@ -64,8 +63,7 @@ iPhone 4S!
 After profilling, I discovered that 95% of the time was spent in Objective-C
 messaging and ARC. Actually, I have millions of calls to very small methods
 with 1 or 2 lines of code, and I found a very good explanation in the internal
-of objc_msgSend (mainly on [mikeask.com](http://www.mikeash.com/pyblog/friday-
-qa-2009-03-20-objective-c-messaging.html)). There is in fact a hash table
+of objc_msgSend (mainly on [mikeask.com][6]. There is in fact a hash table
 lookup behind objc_msgSend! This explains most of my performance problems.
 
 To fix these problems, I started to replace all this low level objective-C
@@ -98,3 +96,10 @@ case :)
 I hope this article will prevent you from spending as much time on
 Java/Objective-C optimizations as I did.
 
+
+[1]: http://redd.it/136hny
+[2]: http://www.algolia.com
+[3]: http://developer.android.com/guide/practices/performance.html
+[4]: http://blog.algolia.com/great-discussions-at-leweb12-london/
+[5]: http://github.com/algolia/UILabel
+[6]: http://www.mikeash.com/pyblog/friday-qa-2009-03-20-objective-c-messaging.html)

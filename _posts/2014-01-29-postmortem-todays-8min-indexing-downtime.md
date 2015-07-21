@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Postmortem of today’s 8min indexing downtime
+title: Postmortem of today's 8min indexing downtime
 author:
   login: julien
   email: julien.lemoine@algolia.com
@@ -11,12 +11,12 @@ author:
 
 Today (Jan 29) at 9:30pm UTC, our service experienced an 8 minute partial
 outage during which we have rejected many write operations sent to the
-indexing API (exactly 2841 calls). We call it “partial” as all search queries
+indexing API (exactly 2841 calls). We call it "partial" as all search queries
 have been honored without any problem. For end-users, there was no visible
 problem.
 
 Transparency is in our DNA: this outage is visible on our status page
-([status.algolia.com](http://status.algolia.com)) but we also wanted to share
+([status.algolia.com][1]) but we also wanted to share
 with you all the details of the outage and more importantly the details of our
 response.
 
@@ -65,9 +65,11 @@ it was too long. To make sure this will not happen again:
 
 ## Conclusion
 
-Having all these probes in our infrastructure was key to detect today’s
+Having all these probes in our infrastructure was key to detect today's
 problem and react quickly. In real conditions, it proved not to be enough. In
 a few hours we have implemented a much better way to handle this kind of
 situation. The quality of our service is our top priority. Thank you for your
 support!
 
+
+[1]: http://status.algolia.com

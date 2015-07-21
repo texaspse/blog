@@ -10,12 +10,12 @@ author:
 ---
 
 About one month ago, we were given the opportunity to participate in
-[Seedcamp](http://www.seedcamp.com/) Paris 2012. In this post I'll try to
+[Seedcamp][1] Paris 2012. In this post I'll try to
 think back to that time and provide feedback, along with some advice if you're
 considering going in that direction. In short, I can already say that this
 experience has revolutionized the way we drive the company!
 
-## ![Seedcamp](assets/seedcamp.png)
+## ![Seedcamp][2]
 
 ## The Application
 
@@ -27,8 +27,8 @@ as a potential distraction from more important stuff... we could not have been
 more wrong!
 
 Our opinion changed after a lunch with [Philippe
-Laval](https://twitter.com/PhilippeLaval), former Seedcamp alumni with his
-company Kwaga (now [WriteThat.name](https://www.writethat.name/)), whom I had
+Laval][3], former Seedcamp alumni with his
+company Kwaga (now [WriteThat.name][4], whom I had
 the pleasure to meet a few times in my previous jobs. In a couple of hours,
 Philippe opened our eyes to the broad requirements for successfully launching
 a startup. Product is clearly one, but there are so many others we could not
@@ -75,10 +75,10 @@ comfortable enough to pay attention to simple things like intonation!
 Some advice: start working on your pitch as early as possible and get as much
 feedback as you can. We were able to organize some pitch training sessions
 with startup personalities and I can't stress how useful this proved to be!
-(Our greatest thanks to [Wessel](https://twitter.com/wesselkooyman),
-[Liam](https://twitter.com/LiamBoogar),
-[Philippe](https://twitter.com/PhilippeLaval) and
-[Fred](http://us.yakaz.com/about/whosYakaz.php)). But wait, isn't there a
+(Our greatest thanks to [Wessel][5],
+[Liam][6],
+[Philippe][7] and
+[Fred][8]. But wait, isn't there a
 training session on the eve of the event? Yes, and it is incredibly useful.
 But if you don't like the idea of changing everything overnight, work on your
 draft and seek feedback beforehand! The preparation session will be all the
@@ -108,8 +108,7 @@ sessions. You're right... but I'm convinced it is much more fruitful to
 concentrate on getting answers and advice that could mean success over failure
 for your company (a passable pitch may not be enough to get a Seedcamp
 investment but good advice might reap untold rewards). Convinced? Have a look
-at [Andreas Klinger excellent post](http://klinger.io/post/36812415337
-/startup-mentoring-sessions-how-to-get-the-most-out-of) to get on track!
+at [Andreas Klinger excellent post][9] to get on track!
 
 In our case, Julien did most of the work preparing for mentoring while I
 concentrated on the pitch. Could we have done more? Probably. Should we have
@@ -157,8 +156,7 @@ short intro ready. It is also better to have a quick demo instead of too many
 words.
 
 You're now up for 5 or 6 sessions of  intense discussion with mentors. Andreas
-provides excellent [advice](http://klinger.io/post/36812415337/startup-
-mentoring-sessions-how-to-get-the-most-out-of) on the pitfalls and potential
+provides excellent [advice][10] on the pitfalls and potential
 benefits of these sessions. Don't forget, mentors are there to help you, they
 won't attack you. Don't try to convice them you're right, just listen what
 they have to say. Don't lose time explaining every aspect of your startup,
@@ -223,3 +221,14 @@ In conclusion, Seedcamp Paris lived up to its reputation. Asked if we would do
 it again, we would certainly answer yes! And I sincerely encourage other
 startups to give it a go!
 
+
+[1]: http://www.seedcamp.com/
+[2]: /algoliasearch-jekyll-hyde/assets/seedcamp.png
+[3]: https://twitter.com/PhilippeLaval
+[4]: https://www.writethat.name/)
+[5]: https://twitter.com/wesselkooyman
+[6]: https://twitter.com/LiamBoogar
+[7]: https://twitter.com/PhilippeLaval
+[8]: http://us.yakaz.com/about/whosYakaz.php)
+[9]: http://klinger.io/post/36812415337/startup-mentoring-sessions-how-to-get-the-most-out-of
+[10]: http://klinger.io/post/36812415337/startup-mentoring-sessions-how-to-get-the-most-out-of

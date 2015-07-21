@@ -87,5 +87,5 @@ grow with us as quickly as our business does.
 
 [1]: http://hk.linkedin.com/in/teddychan/
 [2]: https://www.aftership.com/
-[3]: /assets/teddy.png
+[3]: /algoliasearch-jekyll-hyde/assets/teddy.png
 [4]: https://www.algolia.com/features

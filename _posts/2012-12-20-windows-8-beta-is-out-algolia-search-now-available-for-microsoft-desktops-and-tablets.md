@@ -34,11 +34,11 @@ versions. That means you'll get exactly the same exceptional performance...
 well probably even better depending of the hardware you're running on. You'll
 also get instant visual feedback, typo-tolerance and multiple attributes
 support! See all the features on our
-[website](http://www.algolia.com/product/).
+[website][1].
 
 ## Easy to Integrate in your Language of Choice
 
-Check out the dedicated [tutorials](http://www.algolia.com/doc/win8/)! The
+Check out the dedicated [tutorials][2]! The
 Algolia Search library has been designed to work directly on the platform.
 That means you can use it in whatever language you prefer, be it JS or one of
 the .Net choices (C#, VB, C++). The tutorials are available in both JS and in
@@ -68,6 +68,10 @@ from the query won't be highlighted.
 
 We hope to be able to change this behaviour in the future. In the meantime,
 we're impatient to get your feedback on this beta!
-[Register](http://www.algolia.com/try/) for your Windows 8 version of Algolia
+[Register][3] for your Windows 8 version of Algolia
 Search now!
 
+
+[1]: http://www.algolia.com/product/
+[2]: http://www.algolia.com/doc/win8/
+[3]: http://www.algolia.com/try/

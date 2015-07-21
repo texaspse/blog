@@ -10,11 +10,11 @@ author:
   last_name: Dessaigne
 ---
 
-[![](assets/CitiesSuggestIPhone5Slide3-300x194.png)](https://blog.algolia.com
+[![][1]](https://blog.algolia.com
 /wp-content/uploads/2012/10/CitiesSuggestIPhone5Slide3.png)
 
 Last month has been truly electrifying! We joined our friends at
-[Yakaz](http://www.yakaz.com/) in their office space, we participated in many
+[Yakaz][2] in their office space, we participated in many
 events... and most exciting of all, we spent days and nights reworking the
 product! Today we are really proud to present you the result of this time well
 spent!
@@ -34,14 +34,14 @@ But that's not all, many smaller improvements were also included in this
 release:
 
   * Support of **advanced queries**. Take again our tutorial contact application, wouldn't it be great to be able to search by initials? You can now implement this cool feature in a couple of minutes without any headache on relevance tuning.
-  * Support for **ARC and no ARC**. In the previous beta we added an iOS version for people that do not use [Automatic Reference Counting (ARC)](http://developer.apple.com/library/mac/#releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html). We now have only one version that supports projects with and without ARC. If you do not use ARC, all objects received from Algolia Search are autoreleased.
+  * Support for **ARC and no ARC**. In the previous beta we added an iOS version for people that do not use [Automatic Reference Counting (ARC)][3]. We now have only one version that supports projects with and without ARC. If you do not use ARC, all objects received from Algolia Search are autoreleased.
   * Support for **user objects backward compatibility**. As the index is also an objects store, you can modify your object members and still read older indexes! It is very easy to implement, just check the tutorials.
   * The release also fixes a few bugs that we discovered during your and our intensive testing.
 
 It would not have been possible without the help of our many beta testers,
-thank you all! Special thanks to [Kris](https://twitter.com/krmarkel),
-[Hoa](https://twitter.com/dinh_viet_hoa) and
-[Thomas](https://twitter.com/sarfata) whose guidance has been priceless.
+thank you all! Special thanks to [Kris][4],
+[Hoa][5] and
+[Thomas][6] whose guidance has been priceless.
 
 So... what's next? Many things! This time I really believe this is the last
 beta. The final release is just around the corner. Of course, we appreciate
@@ -50,3 +50,10 @@ and a few apps in the app store! Who said a contact app?
 
 Stay tuned!
 
+
+[1]: /algoliasearch-jekyll-hyde/assets/CitiesSuggestIPhone5Slide3-300x194.png
+[2]: http://www.yakaz.com/
+[3]: http://developer.apple.com/library/mac/#releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html
+[4]: https://twitter.com/krmarkel
+[5]: https://twitter.com/dinh_viet_hoa
+[6]: https://twitter.com/sarfata

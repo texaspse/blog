@@ -9,7 +9,7 @@ author:
   last_name: Dessaigne
 ---
 
-[![](assets/searchForEvernoteSmall.png)](https://blog.algolia.com/wp-
+[![][1]](https://blog.algolia.com/wp-
 content/uploads/2012/08/searchForEvernoteSmall.png)After a few months in the
 making, our first mobile library is finally ready to hit the shelves! Well,
 nearly! Before releasing it, we want all the feedback you can give us to
@@ -28,3 +28,5 @@ to report bugs, request features, or anything beta related: beta@algolia.com
 
 Enjoy!
 
+
+[1]: /algoliasearch-jekyll-hyde/assets/searchForEvernoteSmall.png

@@ -16,11 +16,14 @@ first class search features! All you have to do is to display non-intrusive
 Algolia branding.
 
 This branded offer is already available on our website. Don't delay, [register
-today](http://www.algolia.com/get-started/)! Check out our [use-cases
-section](http://www.algolia.com/usecases/) to discover possible
+today][1]! Check out our [use-cases
+section][2] to discover possible
 implementations and see how Sharypic, Offline dictionaries, and Sush.io have
 integrated Algolia in their apps.
 
 Help us spread the word. We want every app developer to be able to take
 advantage of this offer!
 
+
+[1]: http://www.algolia.com/get-started/
+[2]: http://www.algolia.com/usecases/

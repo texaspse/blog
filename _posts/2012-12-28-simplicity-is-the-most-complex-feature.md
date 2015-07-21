@@ -43,5 +43,7 @@ You should be focused on simplicity for your users even it this results in
 more complexity for you (like maintaining backward compatibility)! As this
 post is strongly related to backward compatibility of API, I encourage you to
 reread this famous post of Jeol Spolsky: [How microsoft lost the API
-war](http://www.joelonsoftware.com/articles/APIWar.html).
+war][1].
 
+
+[1]: http://www.joelonsoftware.com/articles/APIWar.html

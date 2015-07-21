@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Inside GrowthHackers.com’s Implementation of Algolia
+title: Inside GrowthHackers.com's Implementation of Algolia
 author:
   login: maxime
   email: maxime.locqueville@algolia.com
@@ -9,23 +9,23 @@ author:
   last_name: Locqueville
 ---
 
-We interviewed [Dylan La Com](https://twitter.com/dylanLaCom), Growth Product
-Manager at [Qualaroo](https://qualaroo.com) &
-[GrowthHackers.com](http://growthhackers.com), about their Algolia
+We interviewed [Dylan La Com][1], Growth Product
+Manager at [Qualaroo][2] &
+[GrowthHackers.com][3], about their Algolia
 implementation experience.
 
-[![growthacker](assets/growthacker.jpg)](https://blog.algolia.com/wp-
+[![growthacker][4]](https://blog.algolia.com/wp-
 content/uploads/2014/05/growthacker.jpg)
 
 ### What role did search play at GrowthHackers before the Algolia
 implementation?
 
 When we launched our community site
-[GrowthHackers.com](http://growthhackers.com/) in October 2013, search was
+[GrowthHackers.com][5] in October 2013, search was
 admittedly an afterthought for us. GrowthHackers is a social-voting site where
 marketers, founders, and product-people can share and discuss growth-related
 content. At launch, it was unclear what role search would have on the site.
-GrowthHackers is built on Wordpress, and with that comes Wordpress’ standard
+GrowthHackers is built on Wordpress, and with that comes Wordpress' standard
 search functionality. What WP search does is append an additional keyword or
 phrase parameter to its typical post query and load a new page with the
 results. WP search only indexed the outbound URLs of the articles our members
@@ -36,8 +36,7 @@ submitted, and this made finding specific content difficult.
 We started hearing about our lack of a solid search feature from some of our
 more active users. One of our members even put together a slide presentation
 to prove just how useless our search was [[check it out
-here](http://www.slideshare.net/andrewmatthewthompson/improving-search-on-
-growthhackers)]. At the same time, GrowthHackers was becoming more than just a
+here][6]]. At the same time, GrowthHackers was becoming more than just a
 way to stay up-to-date on the best growth articles, it was becoming the place
 to get answers: an encyclopedia for growth-related information. Search volume
 at this time was peaking in the mid-hundreds per week. We needed a search
@@ -65,11 +64,11 @@ questions, videos and slides. The majority of what we index is article titles
 and URLs--strings which are generally small. Visitors to our site often come
 with specific growth-related questions and use our search to find answers
 quickly. For example, someone interested in learning best practices for
-running Twitter ads could type in “Twitter ad” and within milliseconds see
+running Twitter ads could type in "Twitter ad" and within milliseconds see
 dozens of articles and discussions related to maximizing ROI for Twitter ads.
-Using Algolia’s admin dashboard, we’re able to set ranking priorities based on
+Using Algolia's admin dashboard, we're able to set ranking priorities based on
 the number of votes and comments of each article, and make sure the top
-results are the most relevant. So, the visitor who searches “Twitter ad” is
+results are the most relevant. So, the visitor who searches "Twitter ad" is
 shown articles with the highest mix of votes and comments. Algolia took the
 search ranking process and wrapped it in a clean and simple interface that
 allows anyone, regardless of their experience with search, to easily adjust
@@ -88,20 +87,27 @@ This has been working quite well for us.
 
 ### How has the new search impacted engagement?
 
-We released the new search mid-February, and since the release we’ve seen
+We released the new search mid-February, and since the release we've seen
 search volume increase 4-5X. Of course there are several factors at play here,
 including increased traffic volume and better search bar placement, but it is
-clear that Algolia’s search features have contributed to an impressive
+clear that Algolia's search features have contributed to an impressive
 increase in search engagement. On average, visitors who utilize search view
 2-3X more pages per session and spend 5-6X longer on the site than those who
-don’t search. Algolia’s analytics dashboard provides us with an incredible
+don't search. Algolia's analytics dashboard provides us with an incredible
 glimpse of visitor intent on our site by showing us the queries visitors are
 searching for, and trend lines to show popularity over time. With this data,
-we’re able to better understand how our visitors want to use our site, and
+we're able to better understand how our visitors want to use our site, and
 make better decisions about how to organize the content.
 
-Moving forward, we’re hoping to implement Algolia’s search filters to provide
-even better ways to access content on our site. We’re excited to have such a
+Moving forward, we're hoping to implement Algolia's search filters to provide
+even better ways to access content on our site. We're excited to have such a
 powerful tool in our stack and hope to experiment with new ways to provide
 search functionality throughout GrowthHackers.
 
+
+[1]: https://twitter.com/dylanLaCom
+[2]: https://qualaroo.com
+[3]: http://growthhackers.com
+[4]: /algoliasearch-jekyll-hyde/assets/growthacker.jpg
+[5]: http://growthhackers.com/
+[6]: http://www.slideshare.net/andrewmatthewthompson/improving-search-on-growthhackers

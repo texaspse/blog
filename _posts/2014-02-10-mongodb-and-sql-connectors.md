@@ -11,7 +11,7 @@ author:
 
 Most of our users are **technical**. They love writing code, and we love
 providing API clients in the major programming languages to them (we are
-currently [supporting 10 platforms](http://www.algolia.com/doc/apiclients)).
+currently [supporting 10 platforms][1].
 
 They are doers. They love prototyping. Just like us, they work for startups
 which need to move fast, and get things done, keeping in mind that done is
@@ -23,17 +23,14 @@ integration and testing.
 ## Before: The first steps with our API
 
 Up until now, our onboarding process asked you to try the API by uploading
-your data. We emphasized our [documentation](http://www.algolia.com/doc), and
+your data. We emphasized our [documentation][2], and
 we made sure our users would not need more than a few minutes to integrate our
-[REST API](http://www.algolia.com/doc/rest). Nevertheless, exporting your
+[REST API][3]. Nevertheless, exporting your
 application's data to a JSON or CSV file is often more complex than it
 appears, especially when you have millions of rows - and especially because
 developers are lazy :) No worries, that's [totally
-OK](http://www.codinghorror.com/blog/2005/08/how-to-be-lazy-dumb-and-
-successful.html). It is something you may not be willing to do, especially
-just to try a service, so we decided to try something else.<del>
-
-</del>
+OK][4]. It is something you may not be willing to do, especially
+just to try a service, so we decided to try something else.
 
 ### Initial import
 
@@ -41,58 +38,62 @@ just to try a service, so we decided to try something else.<del>
 collection to a JSON file can be easy if you're using a framework, for example
 Ruby on Rails:
 
-    
-    File.open("/tmp/export.json", "w") do |f|
-      f << MyActiveRecordModel.all.to_json
-    end
+```ruby
+File.open("/tmp/export.json", "w") do |f|
+  f << MyActiveRecordModel.all.to_json
+end
+```
 
 ...or more annoying, for example when using PHP without any framework:
 
-    
-    mysql_connect('localhost', 'mysql_user', 'mysql_password');
-    mysql_set_charset('utf8');
-    $results = array();
-    $q = mysql_query("SELECT * FROM YourTable");
-    if ($q) {
-      while (($row = mysql_fetch_assoc($q))) {
-        array_push($results, $row);
-      }
-    }
-    $fp = fopen('/tmp/export.json', 'w');
-    fwrite($fp, json_encode($results));
-    fclose($fp);
+```php
+mysql_connect('localhost', 'mysql_user', 'mysql_password');
+mysql_set_charset('utf8');
+$results = array();
+$q = mysql_query("SELECT * FROM YourTable");
+if ($q) {
+  while (($row = mysql_fetch_assoc($q))) {
+    array_push($results, $row);
+  }
+}
+$fp = fopen('/tmp/export.json', 'w');
+fwrite($fp, json_encode($results));
+fclose($fp);
+```
 
 Anyway, in both cases it gets harder if you want to export millions of rows
 without consuming hundreds GB of RAM. So you will need to use our API clients:
 
     
-    index = Algolia::Index.new "YourIndex"
-    MyActiveRecordModel.find_in_batches(1000) do |objects|
-      index.add_objects(objects)
-    end
-    # that's actually what `MyActiveRecordModel.reindex!` does
-    
-    mysql_connect('localhost', 'mysql_user', 'mysql_password');
-    mysql_set_charset('utf8');
-    $limit = 1000;
-    $start = 0;
-    $index = $client->initIndex('YourIndexName');
-    while (true) {
-      $q = mysql_query("SELECT * FROM YourTable LIMIT " . $start . "," . $limit);
-      $n = 0;
-      if ($q) {
-        $objects = array();
-        while(($row = mysql_fetch_assoc($q))) {
-          array_push($objects, $row);
-          ++$n;
-        }
-        $index->addObjects($objects);
-      }
-      if ($n != $limit) {
-        break;
-      }
-      $start += $n;
+```ruby
+index = Algolia::Index.new "YourIndex"
+MyActiveRecordModel.find_in_batches(1000) do |objects|
+  index.add_objects(objects)
+end
+# that's actually what `MyActiveRecordModel.reindex!` does
+
+mysql_connect('localhost', 'mysql_user', 'mysql_password');
+mysql_set_charset('utf8');
+$limit = 1000;
+$start = 0;
+$index = $client->initIndex('YourIndexName');
+while (true) {
+  $q = mysql_query("SELECT * FROM YourTable LIMIT " . $start . "," . $limit);
+  $n = 0;
+  if ($q) {
+    $objects = array();
+    while(($row = mysql_fetch_assoc($q))) {
+      array_push($objects, $row);
+      ++$n;
     }
+    $index->addObjects($objects);
+  }
+  if ($n != $limit) {
+    break;
+  }
+  $start += $n;
+}
+```
 
 ### Incremental updates
 
@@ -110,7 +111,7 @@ Or
   * Patch your application/website code to replicate every add/delete/update operations to our API: 
     * real-time,
     * consistent & durable,
-    * a little intrusive to some people, even though it is only a few lines of code ([see our documentation](http://www.algolia.com/doc))
+    * a little intrusive to some people, even though it is only a few lines of code ([see our documentation][5]
 
 ## After: Introducing connectors
 
@@ -124,9 +125,7 @@ servers.
 
 ### SQL connector
 
-![](assets/GitHub-Mark-32px-6a9b6da9ea3b556e9be6df64fa72addd.png) Github
-project: [algolia/jdbc-java-connector](https://github.com/algolia/jdbc-java-
-connector) (MIT license, we love pull-requests :))
+Github project: [algolia/jdbc-java-connector][6] (MIT license, we love pull-requests :))
 
 The connector starts by enumerating the table and push all matching rows to
 our server. If you store the last modification date of a row in a field, you
@@ -135,34 +134,36 @@ minutes, the connector synchronizes your database with the index by adding the
 new rows and removing the deleted ones.
 
     
-    jdbc-connector.sh --source "jdbc:mysql://localhost/YourDB"  
-      --username mysqlUser --password mysqlPassword             
-      --selectQuery "SELECT * FROM YourTable" --primaryField id 
-      --updateQuery "SELECT * FROM YourTable WHERE updated_at > _$"
-      --updatedAtField updated_at 
-      --applicationId YourApplicationId --apiKey YourApiKey --index YourIndexName
+```java
+jdbc-connector.sh --source "jdbc:mysql://localhost/YourDB"  
+  --username mysqlUser --password mysqlPassword             
+  --selectQuery "SELECT * FROM YourTable" --primaryField id 
+  --updateQuery "SELECT * FROM YourTable WHERE updated_at > _$"
+  --updatedAtField updated_at 
+  --applicationId YourApplicationId --apiKey YourApiKey --index YourIndexName
+  ```
 
 If you don't have an updated_at  field, you can use:
 
     
-    jdbc-connector.sh --source "jdbc:mysql://localhost/YourDB"  
-      --username mysqlUser --password mysqlPassword             
-      --selectQuery "SELECT * FROM YourTable" --primaryField id 
-      --applicationId YourApplicationId --apiKey YourApiKey --index YourIndexName
+```java
+jdbc-connector.sh --source "jdbc:mysql://localhost/YourDB"  
+  --username mysqlUser --password mysqlPassword             
+  --selectQuery "SELECT * FROM YourTable" --primaryField id 
+  --applicationId YourApplicationId --apiKey YourApiKey --index YourIndexName
+```
 
-The full list of features is available on [Github](https://github.com/algolia
-/jdbc-java-connector) (remember, we ♥ feature and pull-requests)!
+The full list of features is available on [Github][7] (remember, we ♥ feature and pull-requests)!
 
 ### MongoDB connector
 
-![](assets/GitHub-Mark-32px-6a9b6da9ea3b556e9be6df64fa72addd.png) Github
-project: [algolia/mongo-connector](https://github.com/algolia/mongo-connector)
+Github
+project: [algolia/mongo-connector][8]
 
 This connector has been forked from [10gen-lab's official
-connector](https://github.com/10gen-labs/mongo-connector) and is based on
-MongoDB's [operation logs](http://docs.mongodb.org/manual/core/replica-set-
-oplog/). This means you will need to start your mongod  server specifying a
-[replica set](http://docs.mongodb.org/manual/tutorial/deploy-replica-set/).
+connector][9] and is based on
+MongoDB's [operation logs][10]. This means you will need to start your mongod  server specifying a
+[replica set][11].
 Basically, you need to start your server with: mongod --replSet
 REPLICA_SET_IDENTIFIER. Once started, the connector will replicate each
 addition/deletion/update to our server, sending a batch of operations every 10
@@ -173,8 +174,7 @@ seconds.
       -d ./doc_managers/algolia_doc_manager.py              
       -t YourApplicationID:YourApiKey:YourIndex
 
-The full features list is available on [Github](https://github.com/algolia
-/mongo-connector) (we ♥ feature and pull-requests).
+The full features list is available on [Github][12] (we ♥ feature and pull-requests).
 
 ## Conclusion: Easier Onboarding, Larger Audience!
 
@@ -186,3 +186,16 @@ convinced without wasting their time before really implementing it.
 Those connectors are open-source and we will continue to improve them based on
 your feedback. Your feature requests are welcome!
 
+
+[1]: http://www.algolia.com/doc/apiclients)
+[2]: http://www.algolia.com/doc
+[3]: http://www.algolia.com/doc/rest
+[4]: http://www.codinghorror.com/blog/2005/08/how-to-be-lazy-dumb-and-successful.html
+[5]: http://www.algolia.com/doc)
+[6]: https://github.com/algolia/jdbc-java-connector
+[7]: https://github.com/algolia/jdbc-java-connector
+[8]: https://github.com/algolia/mongo-connector
+[9]: https://github.com/10gen-labs/mongo-connector
+[10]: http://docs.mongodb.org/manual/core/replica-set-oplog/
+[11]: http://docs.mongodb.org/manual/tutorial/deploy-replica-set/
+[12]: https://github.com/algolia/mongo-connector

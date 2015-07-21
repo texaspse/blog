@@ -12,7 +12,7 @@ author:
 Last week provided me with an occasion to feel the tempo of the mobile
 ecosystem at Apps World in London. Here are a few thoughts about what I saw.
 
-![](assets/appsworld-300x224.jpg)There were many many mobile agencies
+![][1]There were many many mobile agencies
 exhibiting... and local UK agencies were dwarfed in number by offshore ones,
 hailing mainly from India. Eastern European countries also had an important
 presence, especially Poland. It seems that the golden days of apps development
@@ -36,18 +36,24 @@ crowded field and a battle for survival!
   * **Ad platforms and payment tools**. I didn't know there were so many options to choose from! Competition seemed harsh to get the attention of the few apps developers attending.
   * And most of all **cross-platform HTML5 frameworks**! I'm not a big fan of PhoneGap and consorts, even if I admit it's a good choice for some apps, especially "enterprise" ones. The space is so crowded with offers now, that many may not survive the next year! By the way if you want to offer a framework and want to differentiate yourself with a cutting-edge search functionality, you know how to contact me ;)
 
-![Blackberry at Apps World](assets/blackberry-300x224.jpg)
+![Blackberry at Apps World][2]
 
 Two companies had a particularly important presence at the event compared to
 what we could have expected:
 
-  * **RIM**, with probably the nicest booth of all. They proposed BlackBerry porting classes, offered developer guidance and gave several workshop speeches. After their recent commitment to [paying BlackBerry 10 developers a minimum of $10K](http://devblog.blackberry.com/2012/09/built-for-blackberry-10k-developer-commitment/), they continue to do all they can to attract developers. But I'm afraid I agree with Charlie Kindel that [paying developers is a bad idea](http://ceklog.kindel.com/2012/09/26/paying-developers-is-a-bad-idea/)!
+  * **RIM**, with probably the nicest booth of all. They proposed BlackBerry porting classes, offered developer guidance and gave several workshop speeches. After their recent commitment to [paying BlackBerry 10 developers a minimum of $10K][3], they continue to do all they can to attract developers. But I'm afraid I agree with Charlie Kindel that [paying developers is a bad idea][4]!
   * **Twilio**, actively promoting their voice and SMS APIs. Their immense success reminds us that there are still billions of feature phones out there!
 
 The other less surprising major players included Samsung and Microsoft, but no
 Google and no Apple (not unexpected!). Of course, they were present in many
 conversations! I had for example a very interesting chat with [Adam
-Hościło](http://twistedhq.com) about the many opportunities provided by the
+Hościło][5] about the many opportunities provided by the
 new iOS 6 Passbook. It's opening a golden area for many in the next few
 months!
 
+
+[1]: /algoliasearch-jekyll-hyde/assets/appsworld-300x224.jpg
+[2]: /algoliasearch-jekyll-hyde/assets/blackberry-300x224.jpg
+[3]: http://devblog.blackberry.com/2012/09/built-for-blackberry-10k-developer-commitment/
+[4]: http://ceklog.kindel.com/2012/09/26/paying-developers-is-a-bad-idea/
+[5]: http://twistedhq.com

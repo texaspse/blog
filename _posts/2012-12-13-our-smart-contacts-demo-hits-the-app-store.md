@@ -11,21 +11,19 @@ author:
 
 After going back and forth a few times with Apple, we are really happy to
 announce the availibility of our [Smart
-Contacts](https://itunes.apple.com/gb/app/algolia-smart-contact/id583433043)
+Contacts][1]
 application on the App Store! Even if we built it to demonstrate the amazing
 features of our search technology SDK, it can be used as an in-place
 replacement of the traditional iPhone Contacts app. Check it up!
 
-[![Smart Contacts demo hits the App Store](assets/available-on-iphone-app-
-store-logo.png)](https://itunes.apple.com/gb/app/algolia-smart-
+[![Smart Contacts demo hits the App Store][2]](https://itunes.apple.com/gb/app/algolia-smart-
 contact/id583433043)
 
 ## Outstanding Search Features
 
 It plugs directly into your iPhone contacts and classically allows you to
 update them or create new ones. What's more interesting is the Search
-integration! It features:[![Smart Contacts Screenshot](assets/SmartContact-
-iphone5-489x1024.png)](https://blog.algolia.com/wp-content/uploads/2012/12
+integration! It features:[![Smart Contacts Screenshot][3]](https://blog.algolia.com/wp-content/uploads/2012/12
 /SmartContact-iphone5.png)
 
   * **Instant search** with autocompletion and **visual feedback** as you type
@@ -48,3 +46,7 @@ develop!
 
 And don't forget your 5 stars ranking ;)
 
+
+[1]: https://itunes.apple.com/gb/app/algolia-smart-contact/id583433043
+[2]: /algoliasearch-jekyll-hyde/assets/available-on-iphone-app-store-logo.png
+[3]: /algoliasearch-jekyll-hyde/assets/SmartContact-iphone5-489x1024.png
