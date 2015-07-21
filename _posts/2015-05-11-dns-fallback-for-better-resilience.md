@@ -21,10 +21,10 @@ get best-effort DNS service automatically with your server.
 
 ## Latency
 
-For couple months we are a happy user of [NSONE](https://nsone.net) that
+For couple months we are a happy user of [NSONE][1] that
 provides us with the first level of logic. We use NSONE for its superb
 performance and data-driven DNS that gives us control in steering the traffic
-of our [Distributed Search Network](https://www.algolia.com/dsn) to the proper
+of our [Distributed Search Network][2] to the proper
 server - whether it means closest or simply available one. But as any other
 network dependent service, there are factors outside of NSONE's control that
 can influence availability of its DNS resolves and consequently Algolia. BGP
@@ -33,19 +33,14 @@ understanding. Well, they do not always make the optimizations in the
 direction we would like to. For some services the change of DNS resolution
 time from 10 to 500ms does not mean a lot but for us it is a deal breaker.
 
-[![nsone-dig-
-latency](assets/nsone-dig-latency.png)](https://blog.algolia.com/wp-
-content/uploads/2015/05/nsone-dig-latency.png) Resolution of latency-1 via
-NSONE
+[![nsone-dig-latency][3]](https://blog.algolia.com/wp-content/uploads/2015/05/nsone-dig-latency.png) Resolution of latency-1 via NSONE
 
 ## DDoS
 
 When we started to think about our DNS dependency, we remembered the [2014
-DDoS attack on UltraDNS](https://threatpost.com/ultradns-dealing-with-ddos-
-attack/105806) and the situation when there was not enough
-[#hugops](https://twitter.com/hashtag/hugops) for all the services impacted.
-During the previous [attack on UltraDNS in 2009](http://www.zdnet.com/article
-/ddos-attack-on-ultradns-affects-amazon-com-salesforce-com-petco-com/) even
+DDoS attack on UltraDNS][4] and the situation when there was not enough
+[#hugops][5] for all the services impacted.
+During the previous [attack on UltraDNS in 2009][6] even
 big names like Amazon and SalesForce got impacted.
 
 ## Solution
@@ -63,12 +58,10 @@ ok performance, many POPs around the world and API we already had integration
 for.
 
 In the last moment, one more paranoid idea came to us - let's not rely on a
-single [TLD](http://en.wikipedia.org/wiki/Top-level_domain). No good reason
+single [TLD][7]. No good reason
 for that, it was just "what if...?" moment.
 
-[![route53-dig-
-latency](assets/route53-dig-latency.png)](https://blog.algolia.com/wp-
-content/uploads/2015/05/route53-dig-latency.png) Resolution of latency-1 via
+[![route53-dig-latency][8]](https://blog.algolia.com/wp-content/uploads/2015/05/route53-dig-latency.png) Resolution of latency-1 via
 Route53
 
 Right now, all the latest versions of our API clients (detailed list below)
@@ -95,3 +88,12 @@ Minimal versions of API clients with support of multiple DNS:
   * [C-Sharp: 3.1.0](https://github.com/algolia/algoliasearch-client-csharp)
   * [Go: 1.2.0](https://github.com/algolia/algoliasearch-client-go)
 
+
+[1]: https://nsone.net
+[2]: https://www.algolia.com/dsn
+[3]: /algoliasearch-jekyll-hyde/assets/nsone-dig-latency.png
+[4]: https://threatpost.com/ultradns-dealing-with-ddos-attack/105806
+[5]: https://twitter.com/hashtag/hugops
+[6]: http://www.zdnet.com/article/ddos-attack-on-ultradns-affects-amazon-com-salesforce-com-petco-com/
+[7]: http://en.wikipedia.org/wiki/Top-level_domain
+[8]: /algoliasearch-jekyll-hyde/assets/route53-dig-latency.png
