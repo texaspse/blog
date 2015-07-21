@@ -33,7 +33,4 @@ Want to know more about our app "Search for Evernote"? Here comes the video.
 You can also download the app directly from
 [http://www.algolia.com/evernote.html](http://www.algolia.com/evernote.html)
 
-httpvh://youtu.be/Te7gtKl_vIU
-
-
 [1]: http://devcup.evernote.com/submissions/8585-search-for-evernote
