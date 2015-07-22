@@ -81,7 +81,7 @@ $(function(config) {
 
   function scrollPageToSelector(selector) {
     var target = $('.page,.post').find(selector);
-    var targetOffset = target[0].getBoundingClientRect().top + window.pageYOffset;
+    var targetOffset = target[0].getBoundingClientRect().top + window.pageYOffset - 20;
     window.setTimeout(function() {
       window.scroll(0, targetOffset);
     }, 100);
