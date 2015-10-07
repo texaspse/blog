@@ -4,7 +4,7 @@ GEM
     algoliasearch (1.6.0)
       httpclient (~> 2.4)
       json (>= 1.5.1)
-    algoliasearch-jekyll (0.3.0)
+    algoliasearch-jekyll (0.4.3)
       algoliasearch (~> 1.4)
       awesome_print (~> 1.6)
       json (~> 1.8)
@@ -50,7 +50,7 @@ GEM
       listen (~> 2.7)
     json (1.8.3)
     kramdown (1.8.0)
-    liquid (2.6.2)
+    liquid (2.6.3)
     listen (2.10.1)
       celluloid (~> 0.16.0)
       rb-fsevent (>= 0.9.3)
@@ -70,7 +70,7 @@ GEM
       ffi (>= 0.5.0)
     redcarpet (3.3.2)
     safe_yaml (1.0.4)
-    sass (3.4.15)
+    sass (3.4.16)
     timers (4.0.1)
       hitimes
     toml (0.1.2)
@@ -81,8 +81,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  algoliasearch-jekyll (~> 0.3)
+  algoliasearch-jekyll (~> 0.4)
   jekyll (~> 2.5)
 
 BUNDLED WITH
-   1.10.5
+   1.10.6
