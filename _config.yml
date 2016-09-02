@@ -1,0 +1,45 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Texas PSE
+tagline:          'Learn More. Do More'
+description:      'We are a group of STEM students from The University of Texas at Austin who love programming and believe it is one of the best skill sets to have as scientists and engineers. This blog is a mean for us to provide programming resources & updates.'
+url:              https://github.com/texaspse/blog.texaspse.org
+baseurl:          /blog
+# Travis will install Bundler dependencies in ./vendor, so we need to exclude it
+# otherwise Jekyll will try to build it (and fail)
+exclude:          [vendor]
+
+author:
+  name:           'PSE'
+  url:            texaspse.github.io
+# Thanks to @mdo for the original theme
+# author:
+#   name:           'Mark Otto'
+#   url:            https://twitter.com/mdo
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+    repo:         https://github.com/texaspse/blog.texaspse.org
+
+# Algolia
+gems:
+  - algoliasearch-jekyll
+
+algolia:
+  application_id: '2SRXNXVLXT'
+  index_name: 'prod_texaspse'
+  read_only_api_key: '6be0576ff61c053d5f9a3225e2a90f76'
+  excluded_files:
+    - 404.html
+    - index.html
