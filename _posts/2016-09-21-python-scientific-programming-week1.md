@@ -13,4 +13,4 @@ author:
 + Jupyter Notebook
 
 ## Downloads
-+ [GASISData](./media/f16-scientific-python/GASISData.csv)
++ [GASISData](https://github.com/texaspse/blog/raw/master/media/f16-scientific-python/GASISData.csv)
