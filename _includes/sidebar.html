@@ -1,16 +1,16 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <h1>
-        <a href="{{ site.baseurl }}/">
+      <h2 style="font-size:2em">
+        <a id="name-of-blog" class="hvr-underline-from-left" href="{{ site.baseurl }}/">
           {{ site.title }}
         </a>
       </h1>
       <p class="lead">{{ site.description }}</p>
     </div>
-
+    <!--
     <input style='width:100%' type="text" class="algolia__input js-algolia__input" autocomplete="off" name="query" placeholder="Search in this site..." />
-
+    -->
     <nav class="sidebar-nav">
       <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
 
@@ -27,8 +27,8 @@
           {% endif %}
         {% endif %}
       {% endfor %}
-
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
+      <a class="sidebar-nav-item" href="https://texaspse.github.io/">Main Website</a>
+      <a class="sidebar-nav-item" href="https://github.com/texaspse/">GitHub</a>
       <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
     </nav>
 
