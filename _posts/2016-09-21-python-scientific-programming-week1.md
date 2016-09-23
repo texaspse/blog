@@ -19,7 +19,7 @@ This week, we will:
 + And if we have time, we can load data from an excel/csv file.
 
 ##  Course Materials
-+ [Google Slides](goo.gl/rihrth )
++ [Google Slides](http://goo.gl/rihrth)
 + [Jupyter Notebook](http://goo.gl/11qJKb)
 
 ## Sources That Might Be Helpful
