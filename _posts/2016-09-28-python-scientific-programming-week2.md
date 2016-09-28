@@ -1,7 +1,4 @@
 ---
-published: false
----
----
 layout: post
 title: 'Python Scientific Programming - Week 2'
 author:
