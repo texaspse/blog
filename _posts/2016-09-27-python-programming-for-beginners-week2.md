@@ -13,30 +13,35 @@ author:
 
 This week, we:
 
-+ Downloaded python and the basic code editor, IDLE.
-+ If you haven’t already, go to this [link]( https://www.python.org/downloads/) and click ‘Download Python 3.5.2’.
-+ Learned about variables and the basic data types in python.
-+ Learned about the mathematical operators in python.
-+ Learned about if statements and how to use them.
++ Had a brief practice with inputting values, and using if/elif/else conditions to evaluate our input.
++ Played around some more with logical operators: `and`, `or` and getting to know the concept of boolean in programming.
++ Took a look a while loops and solved some fun problems using while.
+
+## Materials
+
++ [Recording of the workshop](https://www.youtube.com/watch?v=GCgKuk4DsmM)
+
+## Recommended Practice
+
++ The Pi problem. If you didn't figure it out during our workshop, just take your time and work that out. There was 2 mathematical ways to solve the problem. During the workshop, we worked on the second method so it might be fun to try out the first one.
+
+![Pi Formula](./media/f16-intro-python/pi_formula.png)
+
+
++ Visit [CodingBat](codingbat.com) -> Python. There's a lot of problems you can practice with especially in the **Warmup-1**, **Warm-up 2**, **Logic-1**, **Logic-2**  that we covered in the last 2 workshops.
++ [Sum of numbers that are Multiples of 3 and 5](https://projecteuler.net/problem=1)
++ [Print out the Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number). That is, the next number is the sum of the previous 2 numbers.
+```
+0, 1, 1, 2, 3, 5, 8, 13, 21,...
+```
++ [Sum of even Fibonacci numbers](https://projecteuler.net/problem=2)
 
 ## How to be prepared for Week 3
 
 It is very important to practice, otherwise the information you learn will feel overwhelming.
 
-+ Go to the website [CodingBat] (http://codingbat.com/python) and practice. Warmup-1 and Logic-1 practice sets will help you. Don’t be afraid to get hints or look up the solutions if you can’t figure it out.
++ Practice practice practice!
 + Make sure you understand the basic mathematical operator + (addition), - (subtraction), * (multiplication), / (division), // (integer division), ** (exponentiation), and very importantly % (modulus)
 + Be sure to understand the difference between a string and number and whether a number is a float or a int.
 + Understand what if, elif, and else do, and be able to write statements with them in python. Also know how to use the Boolean (True/False) operators >=, ==, <=, <, >, and, or within if statements.
-
-Here are a few random practice problems that you can do. If you can solve them, you should be prepared!
-
-+ Ask a user to input their age. If they are under 18, print that they can’t drink or join the military, if they are over 18, print that the can join the military, if they are over 21, print that they can drink.
-+ Write out the variables for width and height, and then print the area of the resulting triangle.
-+ Ask the user to input the current year. Print whether or not it is a leap year. Hint: use the modulus operator.
-
-
-## Additional Material
-
-+ [This YouTube Video]( https://www.youtube.com/watch?v=N4mEzFDjqtA) covers moth of Python in 45 minutes. But don’t be surprised if you don’t understand a lot of it.
-+ [This YouTube Video]( ttps://www.youtube.com/watch?v=pTV6bILLP_s) cover python at a much more appropriate pace.
-+ Try [codeacedemy] (https://www.codecademy.com/learn/all)
++ Understand  why we need to keep updating the counter for while loops.
