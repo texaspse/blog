@@ -25,7 +25,7 @@ This week, we:
 
 + The Pi problem. If you didn't figure it out during our workshop, just take your time and work that out. There was 2 mathematical ways to solve the problem. During the workshop, we worked on the second method so it might be fun to try out the first one.
 
-![Pi Formula](./media/f16-intro-python/pi_formula.png)
+![Pi Formula](https://github.com/texaspse/blog/raw/master/media/f16-intro-python/week2/pi_formula.png)
 
 
 + Visit [CodingBat](codingbat.com) -> Python. There's a lot of problems you can practice with especially in the **Warmup-1**, **Warm-up 2**, **Logic-1**, **Logic-2**  that we covered in the last 2 workshops.
