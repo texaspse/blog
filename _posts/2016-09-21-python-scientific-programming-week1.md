@@ -32,7 +32,7 @@ This week, we will:
 
 ## Suggested Practice
 
-Our best advice, and this is how most of the officers in our team learned this in the first place, is to start doing your homework using code on the side. 
+Our best advice, and this is how most of the officers in our team learned this in the first place, is to start doing your homework using code on the side.
 
 We also suggest you partner up with someone in the club to help each other out and clear up confusions, and come up with things you can do together.
 
