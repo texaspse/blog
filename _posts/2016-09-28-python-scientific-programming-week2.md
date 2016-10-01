@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD:_posts/2016-09-28-python-scientific-programming-week2.md
+=======
+published: true
+---
+---
+>>>>>>> master:_posts/2016-09-28-python-scientific-programming-week-2.md
 layout: post
 title: 'Python Scientific Programming - Week 2'
 author:
@@ -31,7 +37,8 @@ This week we will:
 + If we have time, we can go through a quick example to show how powerful pandas is when it renders tens of thousands of rows super quickly.
 
 ##  Course Materials
-+ [Jupyter Notebook](http://goo.gl/11qJKb)
++ [Recodings](https://www.youtube.com/watch?v=PKQmoQ8GAm8&feature=youtu.be)
++ [Jupyter Notebook](http://nbviewer.jupyter.org/github/texaspse/blog/blob/master/media/f16-scientific-python/week2/PythonScientificWS-Week2.ipynb)
 
 ## Sources That Might Be Helpful
 
