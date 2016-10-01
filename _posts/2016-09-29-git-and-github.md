@@ -3,7 +3,7 @@ published: false
 ---
 ---
 layout: post
-title: 'Python Scientific Programming - Week 2'
+title: 'Git and Github'
 author:
   login: quynhnguyen
   email: quynhnguyen895@utexas.edu
