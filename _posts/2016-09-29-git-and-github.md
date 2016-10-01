@@ -1,16 +1,6 @@
 ---
 published: true
 ---
----
-layout: post
-title: 'Git and Github'
-author:
-  login: quynhnguyen
-  email: quynhnguyen895@utexas.edu
-  display_name: Quynh Nguyen
-  first_name: Quynh
-  last_name: Nguyen
----
 
 ## Course Materials
 
