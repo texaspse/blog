@@ -4,7 +4,6 @@ published: false
 ---
 layout: post
 title: 'Python Scientific Programming - Week 2'
-published: true
 author:
   login: quynhnguyen
   email: quynhnguyen895@utexas.edu
@@ -12,7 +11,6 @@ author:
   first_name: Quynh
   last_name: Nguyen
 ---
-
 
 ## Goal of Week 2
 
