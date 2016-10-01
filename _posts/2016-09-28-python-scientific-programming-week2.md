@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD:_posts/2016-09-28-python-scientific-programming-week2.md
-=======
-published: true
+published: false
 ---
 ---
->>>>>>> master:_posts/2016-09-28-python-scientific-programming-week-2.md
 layout: post
 title: 'Python Scientific Programming - Week 2'
 author:
