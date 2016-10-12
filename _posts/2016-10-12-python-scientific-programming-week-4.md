@@ -9,7 +9,7 @@ author:
   last_name: Nguyen
 ---
 
-## [Python Notebook](goo.gl/3ccN5j)
+## [Python Notebook](http://nbviewer.jupyter.org/github/texaspse/blog/blob/gh-pages/media/f16-scientific-python/week4/week4.ipynb)
 
 ## Suggested Practice
 
