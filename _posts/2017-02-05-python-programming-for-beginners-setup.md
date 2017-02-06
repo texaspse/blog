@@ -12,7 +12,7 @@ If you wish to attend the Python classes, please follow these simple instruction
 ## Downloading and Installing Python
 
 To install python, simple google "install python" or go to this link: 
-[website](https://www.python.org/downloads/)
+[Install Python](https://www.python.org/downloads/)
 and click "Download Python 3.6.0". Once done, you should have a text editor
 called IDLE on your computer and you are ready to write code! Open IDLE, Make
 a new file. In that file, type in some python code such as "print('Hello World')".

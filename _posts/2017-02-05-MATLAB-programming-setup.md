@@ -13,7 +13,7 @@ If you wish to attend the MATLAB classes, please follow these simple instruction
 
 Follow the link: 
 
-[website](https://ut.service-now.com/utss/catalogoverview.do?sysparam_citems_id=f9d65c7c4ff9d200f6897bcd0210c77d&sysparam_cat_id=e0d08b13c3330100c8b837659bba8fb4,Information%20Technology&sysparam_sys_id=54e21cd94feeda0031eb7bcd0210c7f5,Software%20&%20Applications&sys_click_name=features)
+[Install MATLAB](https://ut.service-now.com/utss/catalogoverview.do?sysparam_citems_id=f9d65c7c4ff9d200f6897bcd0210c77d&sysparam_cat_id=e0d08b13c3330100c8b837659bba8fb4,Information%20Technology&sysparam_sys_id=54e21cd94feeda0031eb7bcd0210c7f5,Software%20&%20Applications&sys_click_name=features)
 
 Click "Request"-->verify your UT EID-->fill out your information, click "Order Now"
 
