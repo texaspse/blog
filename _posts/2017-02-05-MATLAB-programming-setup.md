@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Python Programming for Beginners - Setup'
+title: 'MATLAB Programming for Beginners - Setup'
 author:
   display_name: Mark Metzger
   first_name: Mark
