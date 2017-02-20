@@ -26,4 +26,4 @@ author:
 
 [Set up & Installation](http://texaspse.org/blog/2017/02/05/MATLAB-programming-setup/)
 
-[2013-02-19 MATLAB Week 1](https://www.youtube.com/watch?v=UlG5BQVNB3w)
+[Week 1](https://www.youtube.com/watch?v=UlG5BQVNB3w)
