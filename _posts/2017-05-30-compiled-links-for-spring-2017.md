@@ -13,6 +13,8 @@ author:
 
 [Week 1](http://texaspse.org/blog/2017/02/19/java-programming-for-beginners-lesson-1/)
 
+[Week 2](http://texaspse.org/blog/2017/02/21/java-programming-for-beginners-lesson-2/)
+
 ## Programming for Beginners with Python Workshop
 
 [Set up & Installation](http://texaspse.org/blog/2017/02/05/python-programming-for-beginners-setup/)
