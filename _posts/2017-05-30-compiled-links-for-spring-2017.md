@@ -25,6 +25,9 @@ author:
 
 [Week 3](http://texaspse.org/blog/2017/02/21/python-programming-for-beginners-week3/)
 
+[Week 4](http://texaspse.org/blog/2017/02/21/python-programming-for-beginners-week4/)
+
+
 ## Scientific Programming with MATLAB Workshop
 
 [Set up & Installation](http://texaspse.org/blog/2017/02/05/MATLAB-programming-setup/)
