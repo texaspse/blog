@@ -7,8 +7,6 @@ author:
   last_name: Metzger
 ---
 
-# Python Lesson 4
-
 ## Review
 
 We started class by reviewing the things we covered previously. First we mentioned the five type of data that can be stored in a variable
