@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Python Programming for Beginners - Lesson 4’
+title: 'Python Programming for Beginners - Week 4’
 author:
   display_name: Mark Metzger
   first_name: Mark
